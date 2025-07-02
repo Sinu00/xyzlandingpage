@@ -33,7 +33,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+966 50 948 1444", "+966 11 234 5678", "Emergency: +966 50 000 0000"],
+      details: ["+966 00 000 0000", "+966 11 234 5678", "Emergency: +966 50 000 0000"],
     },
     {
       icon: Mail,
