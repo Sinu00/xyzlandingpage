@@ -10,12 +10,12 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Equipment Rental", href: "#rental" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "Services", href: "#" },
+    { name: "Equipment Rental", href: "#" },
+    { name: "Portfolio", href: "#" },
+    { name: "Contact", href: "#" },
   ]
 
   return (
