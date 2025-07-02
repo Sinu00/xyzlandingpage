@@ -5,19 +5,19 @@ import { ArrowRight, Play } from "lucide-react"
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
+    <section id="home" className="relative h-[calc(100vh-96px)] flex items-center">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/placeholder.svg?height=800&width=1200')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/hero.jpeg')`,
         }}
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+      <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-8 py-12 pl-4">
+        <div className="max-w-3xl text-left">
+          <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
             POWERING YOUR
             <br />
             <span className="text-red-500">PROJECTS</span> WITH
@@ -25,7 +25,7 @@ export default function Hero() {
             PREMIUM EQUIPMENT
           </h1>
 
-          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-lg text-gray-200 mb-8 leading-relaxed">
             Leading provider of equipment rental, trading, and maintenance services. Transforming industries with
             cutting-edge solutions for optimal performance and growth.
           </p>

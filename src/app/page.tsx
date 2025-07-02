@@ -8,9 +8,11 @@ import Footer from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <div>
       <Header />
-      <Hero />
+      <div className="min-h-screen">
+        <Hero />
+      </div>
       <About />
       <Services />
       <Portfolio />
