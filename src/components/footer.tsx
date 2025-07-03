@@ -2,17 +2,6 @@ import Link from "next/link"
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
-  const services = [
-    "Equipment Rental",
-    "Equipment Trading",
-    "Maintenance Services",
-    "Technical Consulting",
-    "Project Solutions",
-    "24/7 Emergency Support",
-  ]
-
-  const quickLinks = ["About Us", "Our Services", "Portfolio", "Contact Us", "Get Quote", "Careers"]
-
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

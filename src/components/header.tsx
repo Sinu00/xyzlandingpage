@@ -2,20 +2,11 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu, Phone, Mail, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
-
-  const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Portfolio", href: "#" },
-    { name: "Contact", href: "#" },
-  ]
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">

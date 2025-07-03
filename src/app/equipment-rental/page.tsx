@@ -1,10 +1,10 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Calendar, Phone, Star, Clock, Headphones, Truck } from "lucide-react"
+import { Calendar, Phone, Star, Clock, Headphones, Truck } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function EquipmentCategoriesPage() {
   const equipmentCategories = [
@@ -133,7 +133,7 @@ export default function EquipmentCategoriesPage() {
       </section>
 
       {/* Equipment Categories */}
-      {equipmentCategories.map((category, categoryIndex) => (
+      {equipmentCategories.map((category) => (
         <section key={category.id} className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Category Header */}
@@ -153,9 +153,11 @@ export default function EquipmentCategoriesPage() {
                 <div key={index} className="group cursor-pointer">
                   <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-amber-200">
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img
+                      <Image
                         src={item.image || "/placeholder.svg"}
                         alt={item.name}
+                        width={400}
+                        height={300}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>

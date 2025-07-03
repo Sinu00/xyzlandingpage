@@ -1,44 +1,47 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink } from "lucide-react"
+import Image from "next/image"
 
 export default function Portfolio() {
-  const projects = [
+  const projects: {
+    title: string;
+    category: string;
+    description: string;
+    image: string;
+    duration: string;
+    location: string;
+  }[] = [
     {
       title: "Industrial Complex Construction",
-      category: "Heavy Equipment Rental",
+      category: "Construction",
+      description: "Complete construction of a 50,000 sq ft industrial facility with modern equipment and infrastructure.",
       image: "/placeholder.svg?height=300&width=400",
-      description: "Provided comprehensive equipment solutions for a major industrial facility construction project.",
+      duration: "12 months",
+      location: "Riyadh, SA"
+    },
+    {
+      title: "Mining Equipment Supply",
+      category: "Equipment Rental",
+      description: "Provided heavy machinery and equipment for large-scale mining operations in the northern region.",
+      image: "/placeholder.svg?height=300&width=400",
+      duration: "18 months",
+      location: "Tabuk, SA"
     },
     {
       title: "Infrastructure Development",
-      category: "Equipment Trading",
+      category: "Construction",
+      description: "Road construction and infrastructure development project spanning 200km of highway construction.",
       image: "/placeholder.svg?height=300&width=400",
-      description: "Supplied and maintained equipment fleet for large-scale infrastructure development.",
+      duration: "24 months",
+      location: "Eastern Province, SA"
     },
     {
-      title: "Oil & Gas Project",
-      category: "Maintenance Services",
+      title: "Oil & Gas Facility",
+      category: "Material Trading",
+      description: "Supply of specialized materials and equipment for offshore oil and gas extraction facility.",
       image: "/placeholder.svg?height=300&width=400",
-      description: "Long-term maintenance contract for specialized equipment in oil and gas operations.",
-    },
-    {
-      title: "Mining Operations",
-      category: "Project Solutions",
-      image: "/placeholder.svg?height=300&width=400",
-      description: "Complete equipment support for mining operations including logistics and technical support.",
-    },
-    {
-      title: "Power Plant Construction",
-      category: "Equipment Rental",
-      image: "/placeholder.svg?height=300&width=400",
-      description: "Specialized equipment rental for power generation facility construction.",
-    },
-    {
-      title: "Commercial Development",
-      category: "Technical Consulting",
-      image: "/placeholder.svg?height=300&width=400",
-      description: "Equipment consulting and optimization for large commercial development project.",
+      duration: "15 months",
+      location: "Dammam, SA"
     },
   ]
 
@@ -58,9 +61,11 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
               <div className="relative overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={400}
+                  height={300}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
