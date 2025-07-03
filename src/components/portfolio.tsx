@@ -50,7 +50,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-amber-600">Portfolio</span>
+            Our <span className="text-red-500">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Showcasing our expertise across diverse industries and challenging projects
@@ -75,7 +75,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-sm text-amber-600 font-semibold mb-2">{project.category}</div>
+                <div className="text-sm text-red-500 font-semibold mb-2">{project.category}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex items-center justify-between">
@@ -88,7 +88,7 @@ export default function Portfolio() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
+          <Button size="lg" className="bg-red-500 hover:bg-red-600">
             View All Projects
           </Button>
         </div>

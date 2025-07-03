@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-amber-600">Touch</span>
+            Get In <span className="text-red-500">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to discuss your project? Contact us today for expert consultation and competitive pricing.
@@ -66,8 +66,8 @@ export default function Contact() {
               {contactInfo.map((info, index) => (
                 <Card key={index} className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-amber-100 p-3 rounded-full">
-                      <info.icon className="h-6 w-6 text-amber-600" />
+                    <div className="bg-red-100 p-3 rounded-full">
+                      <info.icon className="h-6 w-6 text-red-500" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">{info.title}</h3>
@@ -129,7 +129,7 @@ export default function Contact() {
                       <select
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                       >
                         <option value="">Select a service</option>
                         <option value="rental">Equipment Rental</option>
@@ -152,7 +152,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-amber-600 hover:bg-amber-700">
+                  <Button type="submit" size="lg" className="w-full bg-red-500 hover:bg-red-600">
                     Send Message
                   </Button>
                 </form>

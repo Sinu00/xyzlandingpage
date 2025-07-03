@@ -10,7 +10,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/heroamber.jpg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/hero.jpeg')`,
         }}
       />
 
@@ -20,7 +20,7 @@ export default function Hero() {
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
             BUILDING THE FUTURE
             <br />
-            <span className="text-amber-500">WITH EXCELLENCE</span> IN
+            <span className="text-red-600">WITH EXCELLENCE</span> IN
             <br />
             EVERY PROJECT
           </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
               Explore Our Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
