@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function About() {
   const stats = [
-    { icon: Users, label: "Happy Clients", value: "1600+" },
+    { icon: Users, label: "Happy Clients", value: "100+" },
     { icon: Award, label: "Years Experience", value: "10+" },
     { icon: CheckCircle, label: "Projects Completed", value: "100+" },
     { icon: Clock, label: "24/7 Support", value: "Always" },
