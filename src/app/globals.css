@@ -120,3 +120,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Cursor pointer for interactive elements */
+@layer base {
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  a,
+  [role="button"],
+  .cursor-pointer,
+  [data-slot="button"],
+  .group[role="button"],
+  select {
+    @apply cursor-pointer;
+  }
+  
+  /* Ensure disabled buttons show default cursor */
+  button:disabled,
+  input[type="button"]:disabled,
+  input[type="submit"]:disabled,
+  input[type="reset"]:disabled,
+  [role="button"]:disabled,
+  .cursor-pointer:disabled {
+    @apply cursor-not-allowed;
+  }
+}

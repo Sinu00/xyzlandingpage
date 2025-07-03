@@ -12,7 +12,7 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
 
       {/* Top bar */}
-      <div className="bg-red-500 text-white py-2">
+      <div className="bg-gray-900 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <span className="flex items-center">

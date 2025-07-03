@@ -88,7 +88,7 @@ export default function EquipmentCategoriesPage() {
       <section 
         className="relative py-20 bg-gray-900"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/heroequipmentrental.jpg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero.jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -138,8 +138,8 @@ export default function EquipmentCategoriesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Category Header */}
             <div className="text-center mb-12">
-              <div className="bg-red-500 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
-                <h2 className="text-3xl md:text-4xl font-bold">{category.title}</h2>
+              <div className="bg-gray-900 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
+                <h2 className="text-3xl md:text-4xl ">{category.title}</h2>
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
               <Badge variant="outline" className="text-base px-6 py-2 border-red-500 text-red-500">
@@ -209,7 +209,7 @@ export default function EquipmentCategoriesPage() {
                     <benefit.icon className="w-8 h-8 text-black" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                  <p className="text-red-100">{benefit.description}</p>
+                  <p className="text-gray-100">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -227,7 +227,7 @@ export default function EquipmentCategoriesPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-500 hover:bg-red-600">
               <Phone className="mr-2 h-5 w-5" />
-              Call +966 50 948 1444
+              Call +966 50 000 0000
             </Button>
             <Link href="/contact">
               <Button size="lg" variant="outline">

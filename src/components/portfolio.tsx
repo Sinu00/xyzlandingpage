@@ -59,7 +59,7 @@ export default function Portfolio() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
               <div className="relative overflow-hidden rounded-lg">
                 <Image
                   src={project.image}
