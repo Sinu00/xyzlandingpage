@@ -7,7 +7,7 @@ export default function MaterialTradingPage() {
       <Header />
       <main className="max-w-5xl mx-auto py-12 px-4 min-h-screen">
         <section className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-red-600">Material Trading</h1>
+          <h1 className="text-4xl font-bold mb-4 text-amber-600">Material Trading</h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             We supply a comprehensive range of industrial materials for all your project needs, ensuring quality and timely delivery.
           </p>

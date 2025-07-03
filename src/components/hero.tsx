@@ -10,7 +10,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/hero.jpeg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/heroamber.jpg')`,
         }}
       />
 
@@ -18,20 +18,19 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-8 py-12 pl-4">
         <div className="max-w-3xl text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
-            POWERING YOUR
+            BUILDING THE FUTURE
             <br />
-            <span className="text-red-500">PROJECTS</span> WITH
+            <span className="text-amber-500">WITH EXCELLENCE</span> IN
             <br />
-            PREMIUM EQUIPMENT
+            EVERY PROJECT
           </h1>
 
           <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-            Leading provider of equipment rental, trading, and maintenance services. Transforming industries with
-            cutting-edge solutions for optimal performance and growth.
+            Your trusted partner for comprehensive construction solutions. From premium equipment rental and material trading to skilled manpower and complete construction services - we deliver excellence at every stage of your project.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg">
               Explore Our Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

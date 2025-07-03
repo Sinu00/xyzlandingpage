@@ -3,7 +3,7 @@ import Footer from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Calendar, Phone } from "lucide-react"
+import { ArrowRight, Calendar, Phone, Star, Clock, Headphones, Truck } from "lucide-react"
 import Link from "next/link"
 
 export default function EquipmentCategoriesPage() {
@@ -14,7 +14,7 @@ export default function EquipmentCategoriesPage() {
       description: "Heavy-duty machinery for excavation, grading, and earth moving operations",
       image: "/placeholder.svg?height=300&width=400",
       equipmentCount: 8,
-      color: "bg-red-600",
+      color: "bg-amber-600",
       equipment: [
         { name: "Cranes", image: "/equipment-rental/earth-moving-equipment/cranes.jpg" },
         { name: "Excavator", image: "/equipment-rental/earth-moving-equipment/excavator.jpg" },
@@ -32,7 +32,7 @@ export default function EquipmentCategoriesPage() {
       description: "Efficient and prompt transportation solutions for all cargo types",
       image: "/placeholder.svg?height=300&width=400",
       equipmentCount: 10,
-      color: "bg-red-600",
+      color: "bg-amber-600",
       equipment: [
         { name: "Dyna", image: "/equipment-rental/transportation/dyna.jpg" },
         { name: "Flat Bed Truck", image: "/equipment-rental/transportation/flatbedtruck.jpg" },
@@ -52,7 +52,7 @@ export default function EquipmentCategoriesPage() {
       description: "Mobile cranes, tower cranes, and specialized lifting equipment",
       image: "/placeholder.svg?height=300&width=400",
       equipmentCount: 3,
-      color: "bg-red-600",
+      color: "bg-amber-600",
       equipment: [
         { name: "Mobile Cranes", image: "/equipment-rental/crane-equipment/mobilecranes.jpg" },
         { name: "Rough Cranes", image: "/equipment-rental/crane-equipment/roughcranes.jpg" },
@@ -65,7 +65,7 @@ export default function EquipmentCategoriesPage() {
       description: "Compact and versatile equipment for smaller construction tasks",
       image: "/placeholder.svg?height=300&width=400",
       equipmentCount: 9,
-      color: "bg-red-600",
+      color: "bg-amber-600",
       equipment: [
         { name: "Man Lifts", image: "/equipment-rental/light-equipment/manlifts.jpg" },
         { name: "Tele Handler", image: "/equipment-rental/light-equipment/telehandler.jpg" },
@@ -85,34 +85,36 @@ export default function EquipmentCategoriesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-gray-900 to-gray-800">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{
-            backgroundImage: `url('/placeholder.svg?height=600&width=1200')`,
-          }}
-        />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Equipment Rental</h1>
-            <p className="text-xl max-w-4xl mx-auto mb-8">
-              We offer wide range of industrial machines, equipment and vehicles for all your industrial, construction
-              and marine requirements.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-red-600 hover:bg-red-700">
-                <Phone className="mr-2 h-5 w-5" />
-                Get Instant Quote
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900"
-              >
-                <Calendar className="mr-2 h-5 w-5" />
-                Check Availability
-              </Button>
-            </div>
+      <section 
+        className="relative py-20 bg-gray-900"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/heroamber.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+            EQUIPMENT <span className="text-amber-500">RENTAL</span>
+          </h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+            Professional-grade equipment for all your construction and industrial needs. 
+            Reliable, maintained, and ready to power your next project.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg">
+              <Phone className="mr-2 h-5 w-5" />
+              Get Instant Quote
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
+            >
+              <Calendar className="mr-2 h-5 w-5" />
+              Check Availability
+            </Button>
           </div>
         </div>
       </section>
@@ -136,11 +138,11 @@ export default function EquipmentCategoriesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Category Header */}
             <div className="text-center mb-12">
-              <div className="bg-red-600 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
+              <div className="bg-amber-600 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
                 <h2 className="text-3xl md:text-4xl font-bold">{category.title}</h2>
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
-              <Badge variant="outline" className="text-base px-6 py-2 border-red-600 text-red-600">
+              <Badge variant="outline" className="text-base px-6 py-2 border-amber-600 text-amber-600">
                 {category.equipmentCount} Units Available
               </Badge>
             </div>
@@ -149,7 +151,7 @@ export default function EquipmentCategoriesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {category.equipment.map((item, index) => (
                 <div key={index} className="group cursor-pointer">
-                  <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-red-200">
+                  <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-amber-200">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img
                         src={item.image || "/placeholder.svg"}
@@ -158,7 +160,7 @@ export default function EquipmentCategoriesPage() {
                       />
                     </div>
                     <div className="p-5">
-                      <h3 className="text-base font-semibold text-gray-900 text-center group-hover:text-red-600 transition-colors duration-300">
+                      <h3 className="text-base font-semibold text-gray-900 text-center group-hover:text-amber-600 transition-colors duration-300">
                         {item.name}
                       </h3>
                     </div>
@@ -172,27 +174,40 @@ export default function EquipmentCategoriesPage() {
       ))}
 
       {/* Why Choose Our Equipment */}
-      <section className="py-16 bg-red-600">
+      <section className="py-16 bg-amber-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Choose Our Equipment Rental</h2>
 
             <div className="grid md:grid-cols-4 gap-8">
               {[
-                { title: "Latest Models", description: "Modern, well-maintained equipment from leading manufacturers" },
+                { 
+                  icon: Star,
+                  title: "Latest Models", 
+                  description: "Modern, well-maintained equipment from leading manufacturers" 
+                },
                 {
+                  icon: Clock,
                   title: "Flexible Terms",
                   description: "Daily, weekly, monthly, and long-term rental options available",
                 },
-                { title: "Full Support", description: "24/7 technical support and maintenance services included" },
-                { title: "Nationwide Delivery", description: "Equipment delivery and pickup across Saudi Arabia" },
+                { 
+                  icon: Headphones,
+                  title: "Full Support", 
+                  description: "24/7 technical support and maintenance services included" 
+                },
+                { 
+                  icon: Truck,
+                  title: "Nationwide Delivery", 
+                  description: "Equipment delivery and pickup across Saudi Arabia" 
+                },
               ].map((benefit, index) => (
                 <div key={index} className="text-center">
                   <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-8 h-8 bg-white rounded-full"></div>
+                    <benefit.icon className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
-                  <p className="text-red-100">{benefit.description}</p>
+                  <p className="text-amber-100">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -208,7 +223,7 @@ export default function EquipmentCategoriesPage() {
             Contact our equipment specialists for personalized recommendations and competitive pricing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-600 hover:bg-red-700">
+            <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
               <Phone className="mr-2 h-5 w-5" />
               Call +966 50 948 1444
             </Button>

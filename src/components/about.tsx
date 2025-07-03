@@ -24,8 +24,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Transforming Industries with
-              <span className="text-red-600"> Cutting-Edge</span> Equipment Solutions
+              About <span className="text-amber-600"> Cutting-Edge</span> Equipment Solutions
             </h2>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -37,7 +36,7 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 mb-8">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-red-600 flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-amber-600 flex-shrink-0" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
@@ -48,7 +47,7 @@ export default function About() {
             {stats.map((stat, index) => (
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
                 <CardContent className="p-0">
-                  <stat.icon className="h-12 w-12 text-red-600 mx-auto mb-4" />
+                  <stat.icon className="h-12 w-12 text-amber-600 mx-auto mb-4" />
                   <div className="text-3xl font-bold text-gray-900 mb-2">{stat.value}</div>
                   <div className="text-gray-600">{stat.label}</div>
                 </CardContent>

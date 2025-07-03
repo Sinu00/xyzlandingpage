@@ -47,40 +47,43 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-red-600">Portfolio</span>
+            Our <span className="text-amber-600">Portfolio</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Showcasing our successful projects and equipment solutions across various industries
+            Showcasing our expertise across diverse industries and challenging projects
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden rounded-lg">
                 <img
-                  src={project.image || "/placeholder.svg"}
+                  src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <Button size="sm" className="bg-white text-gray-900 hover:bg-gray-100">
-                    <ExternalLink className="h-4 w-4 mr-2" />
+                  <Button variant="outline" className="bg-white text-gray-900 hover:bg-gray-100">
                     View Details
                   </Button>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <div className="text-sm text-red-600 font-semibold mb-2">{project.category}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
-              </CardContent>
+              <div className="p-6">
+                <div className="text-sm text-amber-600 font-semibold mb-2">{project.category}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-600 mb-4">{project.description}</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-500">{project.duration}</span>
+                  <span className="text-sm text-gray-500">{project.location}</span>
+                </div>
+              </div>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-red-600 hover:bg-red-700">
+        <div className="text-center">
+          <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
             View All Projects
           </Button>
         </div>
