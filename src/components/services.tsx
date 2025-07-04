@@ -32,34 +32,56 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+    <section id="services" className="py-24 bg-white relative">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50/30 to-transparent"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Enhanced section header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
             Our <span className="text-red-500">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive solutions tailored to meet your industrial and construction needs
+          <div className="w-24 h-1 bg-red-500 mx-auto mb-6 rounded-full"></div>
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Comprehensive solutions tailored to meet your industrial and construction needs with excellence and precision
           </p>
         </div>
+
+        {/* Enhanced services grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow duration-300 group cursor-pointer">
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-red-500 transition-colors">
-                  <service.icon className="h-8 w-8 text-red-500 group-hover:text-white transition-colors" />
+            <Card 
+              key={index} 
+              className="group hover:shadow-2xl transition-all duration-500 cursor-pointer border-0 bg-white hover:bg-gray-50/50 transform hover:-translate-y-2 relative overflow-hidden"
+            >
+              {/* Subtle gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <CardHeader className="text-center pb-6 pt-8 relative z-10">
+                {/* Enhanced icon with better hover effect */}
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:from-red-500 group-hover:to-red-600 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
+                  <service.icon className="h-10 w-10 text-red-500 group-hover:text-white transition-all duration-500" />
                 </div>
-                <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
+                
+                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors duration-300 mb-2">
+                  {service.title}
+                </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-6 min-h-[72px]">{service.description}</p>
+
+              <CardContent className="px-6 pb-8 relative z-10">
+                <p className="text-gray-600 group-hover:text-gray-700 mb-8 leading-relaxed text-center transition-colors duration-300">
+                  {service.description}
+                </p>
+                
+                {/* Enhanced button with better hover effect */}
                 <Link href={service.href} legacyBehavior>
-                <Button
-                  variant="outline"
-                  className="w-full border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
-                >
-                  Learn More
-                </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full border-2 border-red-500/20 text-red-500 hover:border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 py-3 font-semibold group-hover:shadow-lg transform group-hover:scale-105"
+                  >
+                    Learn More
+                  </Button>
                 </Link>
               </CardContent>
             </Card>

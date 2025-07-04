@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function ConstructionPage() {
   const constructionServices = [
