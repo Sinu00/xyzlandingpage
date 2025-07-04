@@ -23,11 +23,6 @@ export default function ManpowerPage() {
             <li className="bg-gray-50 rounded-lg p-4 shadow-sm">On-site Workforce Solutions</li>
           </ul>
         </section>
-        <div className="mt-12 text-center text-sm text-muted-foreground">
-          <p><strong>Head Office:</strong> King Khalid St. 11th cross, Kingdom of Saudi Arabia, Alkhobar</p>
-          <p><strong>Contact:</strong> Tel: +966 13 8943660 | Fax: +966 13 8947740 | Mobile: +966 548613433</p>
-          <p><strong>Email:</strong> <a href="mailto:sales@ssqindus.com" className="underline">sales@ssqindus.com</a>, <a href="mailto:info@ssqindus.com" className="underline">info@ssqindus.com</a></p>
-        </div>
       </main>
       <Footer />
     </div>
