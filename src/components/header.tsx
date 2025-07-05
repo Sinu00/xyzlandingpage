@@ -57,7 +57,7 @@ export default function Header() {
           <div className="flex justify-between items-center h-16">
             
             {/* Logo - smaller and more professional */}
-            <div className="flex items-center">
+            <div className="flex items-center gap-4">
               <Link href="/" className="flex items-center">
                 <div className={`bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-all duration-300 ${
                   isScrolled ? 'transform scale-95 shadow-lg' : ''
@@ -65,6 +65,16 @@ export default function Header() {
                   XYZ
                 </div>
               </Link>
+              {/* Vision 2030 Logo */}
+              <div className="flex items-center">
+                <img 
+                  src="/vision2030logo.jpg" 
+                  alt="Vision 2030" 
+                  className={`h-8 w-auto object-contain transition-all duration-300 ${
+                    isScrolled ? 'h-6' : ''
+                  }`}
+                />
+              </div>
             </div>
 
             {/* Desktop navigation - compact spacing */}
