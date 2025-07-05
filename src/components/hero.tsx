@@ -1,7 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight, Phone } from "lucide-react"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -33,22 +34,26 @@ export default function Hero() {
 
           {/* Professional buttons with appropriate sizing */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-800">
-            <Button 
-              size="default" 
-              className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 text-base font-medium rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
-            >
-              Explore Our Services
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-            </Button>
+            <a href="#services" className="inline-block">
+              <Button 
+                size="default" 
+                className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 text-base font-medium rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
+              >
+                Explore Our Services
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </Button>
+            </a>
 
-            <Button
-              size="default"
-              variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 py-3 text-base font-medium rounded-md backdrop-blur-sm hover:backdrop-blur-none transition-all duration-300 group"
-            >
-              <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-              Watch Video
-            </Button>
+            <Link href="/contact" className="inline-block">
+              <Button
+                size="default"
+                variant="outline"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 px-6 py-3 text-base font-medium rounded-md backdrop-blur-sm hover:backdrop-blur-none transition-all duration-300 group"
+              >
+                <Phone className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+                Get Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

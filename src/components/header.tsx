@@ -1,15 +1,32 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Menu, X, Phone, Mail, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 10
+      setIsScrolled(scrolled)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className={`sticky top-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200' 
+        : 'bg-white shadow-lg'
+    }`}>
       {/* Top contact bar - compact and professional */}
       <div className="bg-gray-900 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,7 +38,7 @@ export default function Header() {
               </span>
               <span className="flex items-center gap-1.5">
                 <Mail className="h-3 w-3" />
-                info@ssqindus.com
+                info@xyz.com
               </span>
             </div>
             <div className="hidden md:flex items-center gap-1.5">
@@ -33,14 +50,18 @@ export default function Header() {
       </div>
 
       {/* Main navigation - compact and clean */}
-      <nav className="bg-white border-b border-gray-100">
+      <nav className={`border-gray-100 transition-all duration-300 ${
+        isScrolled ? 'bg-transparent' : 'bg-white border-b'
+      }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             
             {/* Logo - smaller and more professional */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
-                <div className="bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-colors duration-300">
+                <div className={`bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-all duration-300 ${
+                  isScrolled ? 'transform scale-95 shadow-lg' : ''
+                }`}>
                   XYZ
                 </div>
               </Link>
@@ -50,47 +71,67 @@ export default function Header() {
             <div className="hidden lg:flex items-center space-x-6">
               <Link
                 href="/"
-                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-300 relative group ${
+                  pathname === '/' 
+                    ? 'text-red-500 bg-red-50 rounded-md' 
+                    : 'text-gray-700 hover:text-red-500'
+                }`}
               >
                 Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 ${
+                  pathname === '/' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
               </Link>
               <Link
-                href="#about"
-                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                href="/about"
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-300 relative group ${
+                  pathname === '/about' 
+                    ? 'text-red-500 bg-red-50 rounded-md' 
+                    : 'text-gray-700 hover:text-red-500'
+                }`}
               >
                 About
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 ${
+                  pathname === '/about' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
               </Link>
               <Link
                 href="#services"
-                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                className="px-3 py-2 text-sm font-medium transition-colors duration-300 relative group text-gray-700 hover:text-red-500"
               >
                 Services
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 w-0 group-hover:w-full"></span>
               </Link>
               <Link
                 href="#clients"
-                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                className="px-3 py-2 text-sm font-medium transition-colors duration-300 relative group text-gray-700 hover:text-red-500"
               >
                 Clients
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 w-0 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#contact"
-                className="text-gray-700 hover:text-red-500 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group"
+                href="/contact"
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-300 relative group ${
+                  pathname === '/contact' 
+                    ? 'text-red-500 bg-red-50 rounded-md' 
+                    : 'text-gray-700 hover:text-red-500'
+                }`}
               >
                 Contact
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"></span>
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 ${
+                  pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
               </Link>
               
               {/* Compact CTA button */}
-              <Button 
-                variant="outline" 
-                className="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white px-4 py-1.5 text-sm font-medium rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-300"
-              >
-                Get Quote
-              </Button>
+              <Link href="/contact">
+                <Button 
+                  variant="outline" 
+                  className="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white px-4 py-1.5 text-sm font-medium rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-300"
+                >
+                  Get Quote
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -110,49 +151,65 @@ export default function Header() {
         {/* Mobile menu - compact styling */}
         {isOpen && (
           <div className="lg:hidden border-t border-gray-100">
-            <div className="px-4 pt-2 pb-4 space-y-1 bg-white shadow-lg">
+            <div className={`px-4 pt-2 pb-4 space-y-1 shadow-lg transition-all duration-300 ${
+              isScrolled ? 'bg-white/95 backdrop-blur-md' : 'bg-white'
+            }`}>
               <Link
                 href="/"
-                className="block text-gray-700 hover:text-red-500 hover:bg-gray-50 px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300"
+                className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 ${
+                  pathname === '/' 
+                    ? 'text-red-500 bg-red-50 font-semibold' 
+                    : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
-                href="#about"
-                className="block text-gray-700 hover:text-red-500 hover:bg-gray-50 px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300"
+                href="/about"
+                className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 ${
+                  pathname === '/about' 
+                    ? 'text-red-500 bg-red-50 font-semibold' 
+                    : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="#services"
-                className="block text-gray-700 hover:text-red-500 hover:bg-gray-50 px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300"
+                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 text-gray-700 hover:text-red-500 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="#clients"
-                className="block text-gray-700 hover:text-red-500 hover:bg-gray-50 px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300"
+                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 text-gray-700 hover:text-red-500 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
                 Clients
               </Link>
               <Link
-                href="#contact"
-                className="block text-gray-700 hover:text-red-500 hover:bg-gray-50 px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300"
+                href="/contact"
+                className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 ${
+                  pathname === '/contact' 
+                    ? 'text-red-500 bg-red-50 font-semibold' 
+                    : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
               <div className="pt-3">
-                <Button 
-                  className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-2 rounded-md shadow-sm transition-all duration-300"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Get Quote
-                </Button>
+                <Link href="/contact" className="block">
+                  <Button 
+                    className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-2 rounded-md shadow-sm transition-all duration-300"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Get Quote
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
