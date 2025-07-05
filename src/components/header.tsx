@@ -28,17 +28,17 @@ export default function Header() {
         : 'bg-white shadow-lg'
     }`}>
       {/* Top contact bar - compact and professional */}
-      <div className="bg-gray-900 text-white py-2">
+      <div className="hidden sm:block bg-gray-900 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-xs">
-            <div className="flex flex-col sm:flex-row items-center gap-3">
-              <span className="flex items-center gap-1.5">
+          <div className="flex flex-row justify-between items-center gap-2 text-xs">
+            <div className="flex flex-row items-center gap-2 sm:gap-3">
+              <span className="flex items-center gap-1">
                 <Phone className="h-3 w-3" />
-                +966 54 482 3155
+                <span className="text-xs">+966 54 482 3155</span>
               </span>
-              <span className="flex items-center gap-1.5">
+              <span className="flex items-center gap-1">
                 <Mail className="h-3 w-3" />
-                info@xyz.com
+                <span className="text-xs">info@xyz.com</span>
               </span>
             </div>
             <div className="hidden md:flex items-center gap-1.5">
