@@ -243,7 +243,7 @@ export default function MaterialTradingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-500 hover:bg-red-600">
               <Phone className="mr-2 h-5 w-5" />
-              Call +966 548613433
+              Call +966 54 482 3155
             </Button>
             <Link href="/contact">
               <Button size="lg" variant="outline">
