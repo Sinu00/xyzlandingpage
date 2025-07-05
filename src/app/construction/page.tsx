@@ -9,113 +9,113 @@ export default function ConstructionPage() {
   const constructionServices = [
     {
       id: "design-technical",
-      title: "Design & Technical Drawings",
-      description: "Our Design & Technical Drawing services combine creative vision with technical precision to bring concepts to life in 2D and 3D formats.",
+      title: "Design & Engineering Solutions",
+      description: "Our Design & Engineering Solutions merge artistic creativity with technical expertise to transform ideas into comprehensive 2D and 3D representations.",
       services: [
         {
-          name: "2D/3D Creative Design & Adaptation",
-          description: "We specialize in creating both digital and physical models that assist in visualizing design and creative concepts with precision. Our design solutions incorporate trends that lead to innovative designs specifically positioned to stand out and make a lasting impression.",
+          name: "2D/3D Design & Visualization",
+          description: "We create digital and physical representations that visualize design concepts with exceptional accuracy, incorporating contemporary trends for innovative solutions.",
           icon: Building
         },
         {
-          name: "Technical Drawings",
-          description: "Our technical drawings service uses precise standard engineering techniques to deliver drawings with accuracy, ensuring seamless communication between the engineering and manufacturing teams in bringing designs to reality.",
+          name: "Engineering Blueprints",
+          description: "Precise industry-standard engineering blueprints ensuring clear communication between design and construction teams for successful project realization.",
           icon: Cog
         },
         {
-          name: "Exhibition Booth Design and Manufacturing",
-          description: "Our services are tailored to create memorable, outstanding exhibition experiences for our clients. We deliver customer-centric designs that highlight each brand message and showcase their unique selling points with exceptional booth construction and management that ensures your exhibition space stands out and makes your displays and events pop.",
+          name: "Exhibition Stand Design & Build",
+          description: "Complete exhibition solutions from design to construction, creating impactful displays that effectively communicate your brand message and unique value.",
           icon: Factory
         }
       ]
     },
     {
       id: "operations-management", 
-      title: "Operations & Project Management",
-      description: "Comprehensive project oversight and operational excellence from concept to completion.",
+      title: "Project Operations & Management",
+      description: "Complete project supervision and operational excellence from initial planning through final completion.",
       services: [
         {
-          name: "Production Supervision",
-          description: "Our production supervision operations and high-quality personnel are geared to ensure seamless integration during project phases.",
+          name: "Construction Oversight",
+          description: "Professional construction supervision with qualified staff ensuring smooth coordination throughout all project phases.",
           icon: Cog
         },
         {
-          name: "Material Sourcing",
-          description: "Our Material Sourcing operations focus quality materials, ensuring the best possible materials. Our sourcing ensures only quality materials hit the manufacturing and assembly lines.",
+          name: "Material Procurement",
+          description: "Strategic sourcing of premium materials with rigorous quality control to ensure only superior materials reach construction phases.",
           icon: Package
         },
         {
-          name: "Project Management",
-          description: "Our project Management employs advanced construction and engineering frameworks, including information and execution. We understand that deadlines matter and every project demands efficient resource and personnel planning and scheduling to achieve project milestones and expected deliverables.",
+          name: "Project Coordination",
+          description: "Advanced project management with effective resource allocation and personnel scheduling to meet deadlines and deliver expected outcomes.",
           icon: Building
         },
         {
-          name: "Quality Control",
-          description: "Our Quality Control service ensures products manufactured are implementing rigorous inspection and testing processes to ensure maximum quality of construction products in line with quality standards for reliable construction delivery to our clients.",
+          name: "Quality Assurance",
+          description: "Stringent inspection and testing procedures ensuring superior construction quality in accordance with industry standards.",
           icon: Star
         },
         {
-          name: "Installations & Maintenance",
-          description: "We provide comprehensive installation and maintenance services to ensure optimal performance and longevity of construction projects.",
+          name: "Setup & Ongoing Support",
+          description: "Complete installation and maintenance services ensuring optimal functionality and long-term durability of construction projects.",
           icon: Cog
         },
         {
-          name: "Reporting",
-          description: "Comprehensive progress reports and documentation ensure stakeholders are informed at every stage of the construction process. We provide detailed updates and transparent communication throughout the project lifecycle.",
+          name: "Progress Documentation",
+          description: "Detailed reporting and documentation keeping stakeholders informed with clear communication throughout the project timeline.",
           icon: Clock
         }
       ]
     },
     {
       id: "production",
-      title: "Production",
-      description: "Specialized manufacturing capabilities delivering precision-crafted solutions across multiple disciplines.",
+      title: "Manufacturing Excellence",
+      description: "Advanced manufacturing capabilities providing precision-engineered solutions across diverse construction disciplines.",
       services: [
         {
-          name: "Specialist Joinery",
-          description: "Our Specialist Joinery Service specializes in carry design with focus on your specific requirements. From architectural elements to custom fittings, Millwork/Casework to design implementation. Our experienced carpenters and joiners deliver outstanding results.",
+          name: "Custom Carpentry",
+          description: "Skilled craftsmen delivering custom carpentry solutions from architectural components to bespoke fittings and millwork.",
           icon: Building
         },
         {
-          name: "Painting and Lacquering",
-          description: "Our Painting and Lacquering services deliver superior protection and beautiful finishes with modern techniques. We ensure expert-level surface painting that maintains painting integrity providing high-quality finishing.",
+          name: "Surface Finishing & Coating",
+          description: "Professional surface treatments and protective coatings using contemporary methods for superior finishing quality.",
           icon: Factory
         },
         {
-          name: "Acrylic",
-          description: "Our Acrylic service specialist in crafting custom Acrylic that integrate beauty with precision. From high-spec commercial materials and functional, to architectural displays for your design specifications. From signage to architectural displays our experience promises enhanced product quality designed for durability and outstanding results.",
+          name: "Acrylic Fabrication",
+          description: "Custom acrylic solutions combining aesthetic appeal with technical precision for commercial and architectural applications.",
           icon: Package
         },
         {
-          name: "Metal",
-          description: "Our Metal service specializes in crafting custom metal solutions that integrate beauty with precision. From high-spec commercial materials and functional to product and architectural, promises to manufacture that integrate beauty with high quality hardware in fabrication structural and architectural solutions.",
+          name: "Metalwork Solutions",
+          description: "Custom metal fabrication services delivering structural and architectural solutions with superior quality hardware.",
           icon: Cog
         },
         {
-          name: "Screen Printing",
-          description: "Our Screen Printing efficiently delivers superb screen designs and images. From branded promotional materials to construction site graphics, our services help provide graphics materials. Our projects graphics expertise is to ensure materials from branded products to exhibitions that reflect the value of business and organization. The services ensure materials leave an lasting impression.",
+          name: "Digital Printing Services",
+          description: "High-quality digital printing for branded materials, signage, and exhibition graphics that create lasting professional impressions.",
           icon: Star
         }
       ]
     },
     {
       id: "logistics",
-      title: "Logistics",
-      description: "End-to-end supply chain management and coordination ensuring timely project delivery.",
+      title: "Supply Chain & Logistics",
+      description: "Comprehensive supply chain coordination and management ensuring efficient and timely project execution.",
       services: [
         {
-          name: "Project Coordination",
-          description: "The logistics service encompasses all aspects of supply chain management including operations, engineering logistics and implementation. We effectively utilize the organizational processes and efficient management of resources, facilitating movement between job-to-site and offices to resolve management solutions.",
+          name: "Project Logistics",
+          description: "Complete supply chain coordination with efficient resource management and streamlined operations between project sites.",
           icon: Building
         },
         {
-          name: "Site Operations",
-          description: "Coordination of complex project-based activities, shipping logistics and implementation focused on job-site efficiency. We ensure seamless communication and resource management throughout all project phases.",
+          name: "On-Site Management",
+          description: "Expert management of complex project activities focused on construction site productivity and seamless coordination.",
           icon: Cog
         },
         {
-          name: "Storage",
-          description: "Professional storage solutions for construction materials, equipment, and finished components. Our secure facilities ensure materials are protected and organized for efficient project deployment.",
+          name: "Warehousing Solutions",
+          description: "Secure storage facilities for construction materials and equipment, systematically organized for efficient project deployment.",
           icon: Package
         }
       ]
@@ -138,16 +138,16 @@ export default function ConstructionPage() {
       >
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-            CONSTRUCTION <span className="text-red-600">SERVICES</span>
+            CONSTRUCTION <span className="text-red-600">EXCELLENCE</span>
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Delivering expert construction services for industrial, commercial, and infrastructure projects 
-            with a focus on quality, safety, and efficiency.
+            Providing comprehensive construction solutions for industrial, commercial, and infrastructure developments 
+            with unwavering commitment to quality, safety, and operational excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
               <Phone className="mr-2 h-5 w-5" />
-              Get Project Quote
+              Request Project Quote
             </Button>
             <Button
               size="lg"
@@ -155,7 +155,7 @@ export default function ConstructionPage() {
               className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
             >
               <Calendar className="mr-2 h-5 w-5" />
-              Schedule Consultation
+              Book Consultation
             </Button>
           </div>
         </div>
@@ -165,10 +165,10 @@ export default function ConstructionPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Construction Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Construction Capabilities</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              We provide comprehensive construction services combining technical expertise with creative innovation 
-              to deliver exceptional results for industrial, commercial, and specialized projects.
+              We offer complete construction solutions that blend technical mastery with innovative design 
+              to produce outstanding results for industrial, commercial, and specialized construction projects.
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function ConstructionPage() {
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
               <Badge variant="outline" className="text-base px-6 py-2 border-red-500 text-red-500">
-                {category.services.length} Specialized Services
+                {category.services.length} Professional Services
               </Badge>
             </div>
 
@@ -217,34 +217,34 @@ export default function ConstructionPage() {
       <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Choose Our Construction Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Partner With XYZ Construction</h2>
 
             <div className="grid md:grid-cols-4 gap-8">
               {[
                 { 
                   icon: Star,
-                  title: "Expert Craftsmanship", 
-                  description: "Skilled professionals delivering precision construction with attention to detail" 
+                  title: "Superior Workmanship", 
+                  description: "Experienced professionals delivering precise construction with meticulous attention to quality" 
                 },
                 {
                   icon: Clock,
-                  title: "Timely Delivery",
-                  description: "Project management excellence ensuring on-time completion within budget",
+                  title: "On-Schedule Delivery",
+                  description: "Advanced project management ensuring punctual completion within agreed budgets",
                 },
                 { 
                   icon: Headphones,
-                  title: "Full Support", 
-                  description: "Comprehensive project support from design through completion and maintenance" 
+                  title: "Complete Service", 
+                  description: "Full project support from initial design through completion and ongoing maintenance" 
                 },
                 { 
                   icon: Truck,
-                  title: "Complete Solutions", 
-                  description: "End-to-end construction services with integrated logistics and coordination" 
+                  title: "Integrated Solutions", 
+                  description: "Complete construction capabilities with coordinated logistics and project management" 
                 },
               ].map((benefit, index) => (
                 <div key={index} className="text-center">
                   <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <benefit.icon className="w-8 h-8 text-white" />
+                    <benefit.icon className="w-8 h-8 text-black" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
                   <p className="text-gray-100">{benefit.description}</p>
@@ -258,9 +258,9 @@ export default function ConstructionPage() {
       {/* Contact CTA */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Start Your Construction Project?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Begin Your Construction Project?</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Contact our construction specialists for personalized project consultation and competitive pricing
+            Connect with our construction experts for tailored project consultation and competitive estimates
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-red-500 hover:bg-red-600">

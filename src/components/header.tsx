@@ -113,13 +113,6 @@ export default function Header() {
                 <span className="absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 w-0 group-hover:w-full"></span>
               </Link>
               <Link
-                href="#clients"
-                className="px-3 py-2 text-sm font-medium transition-colors duration-300 relative group text-gray-700 hover:text-red-500"
-              >
-                Clients
-                <span className="absolute bottom-0 left-0 h-0.5 bg-red-500 transition-all duration-300 w-0 group-hover:w-full"></span>
-              </Link>
-              <Link
                 href="/contact"
                 className={`px-3 py-2 text-sm font-medium transition-colors duration-300 relative group ${
                   pathname === '/contact' 
@@ -192,13 +185,6 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 Services
-              </Link>
-              <Link
-                href="#clients"
-                className="block px-3 py-2 text-sm font-medium rounded-md transition-colors duration-300 text-gray-700 hover:text-red-500 hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                Clients
               </Link>
               <Link
                 href="/contact"
