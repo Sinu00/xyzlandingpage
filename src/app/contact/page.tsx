@@ -22,7 +22,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone Number",
-      details: "+966 548613433",
+      details: "+966 54 482 3155",
       description: "Available 24/7 for urgent construction needs"
     },
     {
@@ -215,7 +215,7 @@ export default function ContactPage() {
                     <Input
                       id="phone"
                       type="tel"
-                      placeholder="+966 XXX XXX XXX"
+                      placeholder="+966 54 482 3155"
                       className="w-full"
                     />
                   </div>
