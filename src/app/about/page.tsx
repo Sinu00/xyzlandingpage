@@ -27,7 +27,7 @@ export default function AboutPage() {
     },
     {
       icon: Building,
-      number: "500+",
+      number: "100+",
       label: "Projects Completed",
       description: "Successfully delivered projects"
     },
@@ -109,7 +109,7 @@ export default function AboutPage() {
       <section 
         className="relative py-20 bg-gray-900"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero.jpeg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero/heroaboutus.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -209,9 +209,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Founded over a decade ago, XYZ began as a small construction company with a vision to provide 
-                  exceptional construction services in Saudi Arabia. What started as a local business has grown 
-                  into a comprehensive construction and industrial services provider.
+                  xyz began as a small construction company with a vision to provide exceptional construction and industrial services in Saudi Arabia.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Today, we serve clients across various industries including oil & gas, manufacturing, infrastructure, 
@@ -227,7 +225,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden">
                 <img 
-                  src="/hero.jpeg" 
+                  src="/hero/heroequipmentrental.jpg" 
                   alt="Construction team at work"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
