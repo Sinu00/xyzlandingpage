@@ -10,15 +10,16 @@ export default function Clients() {
     { name: "Royal Commission", logo: "/clients/royal-commission.png" },
     { name: "NEOM", logo: "/clients/neom.png" },
     { name: "Red Sea Global", logo: "/clients/red-sea.png" },
-    { name: "PIF", logo: "/clients/pif.png" },
+    { name: "Satorp", logo: "/clients/satorp.png" },
     { name: "ACWA Power", logo: "/clients/acwa.png" },
     { name: "SEC", logo: "/clients/sec.png" },
     { name: "STC", logo: "/clients/stc.png" },
+    { name: "Petro Rabigh", logo: "/clients/petro-rabigh.png" },
   ]
 
   // Split clients into two rows
-  const firstRow = clients.slice(0, 6)
-  const secondRow = clients.slice(6, 12)
+  const firstRow = clients.slice(0, 7)
+  const secondRow = clients.slice(7, 13)
 
   // Create multiple copies for seamless infinite scroll
   const infiniteFirstRow = [...firstRow, ...firstRow, ...firstRow]
