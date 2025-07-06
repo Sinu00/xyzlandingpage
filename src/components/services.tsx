@@ -1,12 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ShoppingCart, Truck, Building, Users } from "lucide-react"
+import { Wrench, Truck, Building, Users } from "lucide-react"
 import Link from "next/link"
 
 export default function Services() {
   const services = [
     {
-      icon: ShoppingCart,
+      icon: Wrench,
       title: "Material Trading",
       description: "Comprehensive supply of industrial materials including valves, pipes, fittings, and more for all your project needs.",
       href: "/material-trading",
