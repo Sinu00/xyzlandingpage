@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-red-500 text-white px-3 py-2 rounded font-bold text-xl">XYZ</div>
+              <div className="bg-red-500 text-white px-3 py-2 rounded font-bold text-xl">Ascend Arabia</div>
               <span className="text-white font-semibold">Equipment Solutions</span>
             </Link>
             <p className="text-gray-300 text-sm">Leading provider of industrial equipment and construction solutions.</p>
@@ -96,7 +96,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-red-500 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">info@xyz.com</p>
+                <p className="text-gray-300 text-sm">info@ascendarabia.com</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 XYZ Equipment Solutions. All rights reserved.
+              © 2024 Ascend Arabia Equipment Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-gray-400 hover:text-red-400 text-sm transition-colors">

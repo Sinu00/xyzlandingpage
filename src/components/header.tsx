@@ -38,7 +38,7 @@ export default function Header() {
               </span>
               <span className="flex items-center gap-1">
                 <Mail className="h-3 w-3" />
-                <span className="text-xs">info@xyz.com</span>
+                <span className="text-xs">info@ascendarabia.com</span>
               </span>
             </div>
             <div className="hidden md:flex items-center gap-1.5">
@@ -62,7 +62,7 @@ export default function Header() {
                 <div className={`bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-all duration-300 ${
                   isScrolled ? 'transform scale-95 shadow-lg' : ''
                 }`}>
-                  XYZ
+                  Ascend Arabia
                 </div>
               </Link>
               {/* Vision 2030 Logo */}
