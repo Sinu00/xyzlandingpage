@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -18,9 +19,11 @@ export default function Hero() {
       {/* Vision 2030 Badge */}
       <div className="absolute top-6 right-6 z-20">
         <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
-          <img 
+          <Image 
             src="/vision2030logo.jpg" 
             alt="Supporting Vision 2030" 
+            width={100}
+            height={48}
             className="h-12 w-auto object-contain"
           />
         </div>

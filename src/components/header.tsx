@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, Phone, Mail, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -67,9 +68,11 @@ export default function Header() {
               </Link>
               {/* Vision 2030 Logo */}
               <div className="flex items-center">
-                <img 
+                <Image 
                   src="/vision2030logo.jpg" 
                   alt="Vision 2030" 
+                  width={100}
+                  height={32}
                   className={`h-8 w-auto object-contain transition-all duration-300 ${
                     isScrolled ? 'h-6' : ''
                   }`}

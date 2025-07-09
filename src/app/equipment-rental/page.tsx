@@ -2,7 +2,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Phone, Star, Clock, Headphones, Truck } from "lucide-react"
+import { Phone, Star, Clock, Headphones, Truck } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -57,7 +57,8 @@ export default function EquipmentCategoriesPage() {
       color: "bg-red-500",
       equipment: [
         { name: "Mobile Cranes", image: "/equipment-rental/crane-equipment/mobilecranes.jpg" },
-        { name: "Rough Cranes", image: "/equipment-rental/crane-equipment/roughcranes.jpg" },
+        { name: "Rough Terrain Cranes", image: "/equipment-rental/crane-equipment/roughterraincrane.png" },
+        { name: "Fork Lift", image: "/equipment-rental/crane-equipment/forklift.jpeg" },
         { name: "Crawler Cranes", image: "/equipment-rental/crane-equipment/crawlercranes.jpg" },
       ],
     },
