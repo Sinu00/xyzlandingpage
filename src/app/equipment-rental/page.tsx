@@ -10,7 +10,7 @@ export default function EquipmentCategoriesPage() {
     {
       id: "earth-moving",
       title: "Earth Moving Equipment",
-      description: "Heavy-duty machinery for excavation, grading, and earth moving operations",
+      description: "Heavy-duty machinery for earth moving operations",
       image: "/placeholder.svg?height=300&width=400",
       color: "bg-red-500",
       equipment: [
@@ -35,16 +35,18 @@ export default function EquipmentCategoriesPage() {
       equipment: [
         { name: "Dyna", image: "/equipment-rental/transportation/dyna.jpg" },
         { name: "Flat Bed Truck", image: "/equipment-rental/transportation/flatbedtruck.jpg" },
-        { name: "AC / Non AC Buses", image: "/equipment-rental/transportation/buses.jpg" },
+        { name: "AC / Non AC Buses", image: "/equipment-rental/transportation/bus.jpg" },
         { name: "Mini Bus", image: "/equipment-rental/transportation/minibus.jpg" },
         { name: "Pickup Truck", image: "/equipment-rental/transportation/pickuptruck.jpg" },
-        { name: "Water Tanker", image: "/equipment-rental/transportation/watertanker.jpg" },
+        { name: "Water Tanker", image: "/equipment-rental/transportation/watertanker.png" },
         { name: "Boom Trucks", image: "/equipment-rental/transportation/boomtrucks.jpg" },
         { name: "Winch Truck", image: "/equipment-rental/transportation/winchtruck.jpg" },
         { name: "Vaccume Tankers", image: "/equipment-rental/transportation/vacuumtankers.jpg" },
         { name: "Low Bed Trailer", image: "/equipment-rental/transportation/lowbedtrailer.jpg" },
+        { name: "Coaster", image: "/equipment-rental/transportation/coaster.png" },
+        { name: "Hiace", image: "/equipment-rental/transportation/hiace.jpg" },
       ],
-    },
+    },  
     {
       id: "crane",
       title: "Lifting Equipment",
@@ -115,8 +117,8 @@ export default function EquipmentCategoriesPage() {
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What We Offer</h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              We offer wide range of industrial machines, equipment and vehicles for all your industrial, construction
-              and marine requirements.
+              Professional equipment rental services including earth moving machinery, transportation vehicles, 
+              lifting equipment, and light construction tools for all your project needs.
             </p>
           </div>
         </div>
@@ -129,7 +131,7 @@ export default function EquipmentCategoriesPage() {
             {/* Category Header */}
             <div className="text-center mb-12">
               <div className="bg-gray-900 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
-                <h2 className="text-3xl md:text-4xl ">{category.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">{category.title}</h2>
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
             </div>

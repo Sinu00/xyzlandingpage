@@ -2,7 +2,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package } from "lucide-react"
+import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package, Home, Users, Shield, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export default function ConstructionPage() {
@@ -212,6 +212,94 @@ export default function ConstructionPage() {
           </div>
         </section>
       ))}
+
+      {/* Temporary Facilities - Dedicated Section */}
+      <section className="py-20 bg-gradient-to-br from-red-50 to-orange-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold mb-4 uppercase tracking-wide">
+              Specialized Service
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <span className="text-red-600">Temporary</span> Facilities
+            </h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              <strong>ASCEND ARABIA</strong> provides resources and expertise to efficiently coordinate the procurement, 
+              set-up, maintenance and dismantle of a wide range of temporary facilities to support remote industrial 
+              projects and/or emergency relief efforts. We have successfully installed various temporary facilities 
+              to industrial clients on developing projects. We have worked with all major manufacturers of modular 
+              trailer complexes throughout Kingdom of Saudi Arabia.
+            </p>
+          </div>
+
+          {/* Main Feature - Portable Cabinets */}
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mb-12">
+            <div className="grid lg:grid-cols-2 gap-0">
+              {/* Image Section */}
+              <div className="relative h-64 lg:h-auto bg-gray-200">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-orange-600/20 flex items-center justify-center">
+                  <div className="text-center text-gray-600">
+                    <Home className="w-16 h-16 mx-auto mb-4" />
+                    <p className="text-sm">Portable Facilities Image</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Content Section */}
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                    <Home className="w-6 h-6 text-red-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">Portable Cabinets and Containers</h3>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Our Portable Cabin services are essential for those customers who execute their work on 
+                  different locations, sites. They can mount the cabin either in temporary or permanent basis or 
+                  after execution of their projects, work they can dismount the same without any destruction. 
+                  Those companies who run number of projects in same time can use the container for Business 
+                  Conference, staying for their executives or for also employer who can stay in luxurious style on 
+                  site without paying any luxury charges.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="bg-red-50 px-4 py-2 rounded-full">
+                    <span className="text-red-700 font-medium">Temporary Installation</span>
+                  </div>
+                  <div className="bg-red-50 px-4 py-2 rounded-full">
+                    <span className="text-red-700 font-medium">Permanent Solutions</span>
+                  </div>
+                  <div className="bg-red-50 px-4 py-2 rounded-full">
+                    <span className="text-red-700 font-medium">Easy Dismantling</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Need Temporary Facilities for Your Project?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Get expert consultation for your temporary facility requirements
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Request Quote
+                </Button>
+                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Schedule Consultation
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Our Construction Services */}
       <section className="py-16 bg-gray-900">
