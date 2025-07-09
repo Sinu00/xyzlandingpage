@@ -13,7 +13,6 @@ export default function EquipmentCategoriesPage() {
       title: "Earth Moving Equipment",
       description: "Heavy-duty machinery for excavation, grading, and earth moving operations",
       image: "/placeholder.svg?height=300&width=400",
-      equipmentCount: 8,
       color: "bg-red-500",
       equipment: [
         { name: "Excavator", image: "/equipment-rental/earth-moving-equipment/excavator.jpg" },
@@ -33,7 +32,6 @@ export default function EquipmentCategoriesPage() {
       title: "Transportation",
       description: "Efficient and prompt transportation solutions for all cargo types",
       image: "/placeholder.svg?height=300&width=400",
-      equipmentCount: 10,
       color: "bg-red-500",
       equipment: [
         { name: "Dyna", image: "/equipment-rental/transportation/dyna.jpg" },
@@ -53,7 +51,6 @@ export default function EquipmentCategoriesPage() {
       title: "Lifting Equipment",
       description: "Mobile cranes, tower cranes, and specialized lifting equipment",
       image: "/placeholder.svg?height=300&width=400",
-      equipmentCount: 3,
       color: "bg-red-500",
       equipment: [
         { name: "Mobile Cranes", image: "/equipment-rental/crane-equipment/mobilecrane.jpg" },
@@ -72,12 +69,11 @@ export default function EquipmentCategoriesPage() {
       title: "Light Equipment",
       description: "Compact and versatile equipment for smaller construction tasks",
       image: "/placeholder.svg?height=300&width=400",
-      equipmentCount: 9,
       color: "bg-red-500",
       equipment: [
         { name: "Tower Lights", image: "/equipment-rental/light-equipment/towerlights.jpg" },
         { name: "Welding Machines", image: "/equipment-rental/light-equipment/weldingmachine.jpg" },
-        { name: "Diesel Generators", image: "/equipment-rental/light-equipment/dieselgenerators.jpg" },
+        { name: "Diesel Generators", image: "/equipment-rental/light-equipment/dieselgenerator.jpg" },
         { name: "Air Compressor", image: "/equipment-rental/light-equipment/aircompressor.jpg" },
       ],
     },
@@ -137,9 +133,6 @@ export default function EquipmentCategoriesPage() {
                 <h2 className="text-3xl md:text-4xl ">{category.title}</h2>
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
-              <Badge variant="outline" className="text-base px-6 py-2 border-red-500 text-red-500">
-                {category.equipmentCount} Units Available
-              </Badge>
             </div>
 
             {/* Equipment Grid */}
