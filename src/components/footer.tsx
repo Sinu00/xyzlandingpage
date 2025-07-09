@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="text-red-500 px-3 py-2 rounded font-bold text-xl">Ascend Arabia</div>
-              <span className="text-white font-semibold">Company Limited</span>
+              <div className="text-red-500 px-3 py-2 rounded font-bold text-xl">Ascend Arabia<span className="text-white font-semibold">Company Limited</span></div>
+              
             </Link>
             <p className="text-gray-300 text-sm">Leading provider of industrial equipment and construction solutions.</p>
             <div className="flex space-x-3">
@@ -105,7 +105,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Ascend Arabia Equipment Solutions. All rights reserved.
+              © 2025 Ascend Arabia Company Limited. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-gray-400 hover:text-red-400 text-sm transition-colors">

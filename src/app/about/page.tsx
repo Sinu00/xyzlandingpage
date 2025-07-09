@@ -16,6 +16,7 @@ import {
   Heart,
   Leaf
 } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
   const stats = [
@@ -224,7 +225,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src="/hero/heroequipmentrental.jpg" 
                   alt="Construction team at work"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
