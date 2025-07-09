@@ -60,6 +60,9 @@ export default function EquipmentCategoriesPage() {
         { name: "Rough Terrain Cranes", image: "/equipment-rental/crane-equipment/roughterraincrane.png" },
         { name: "Fork Lift", image: "/equipment-rental/crane-equipment/forklift.jpeg" },
         { name: "Crawler Cranes", image: "/equipment-rental/crane-equipment/crawlercranes.jpg" },
+        { name: "Man Lifts", image: "/equipment-rental/light-equipment/manlifts.jpg" },
+        { name: "Tele Handler", image: "/equipment-rental/light-equipment/telehandler.jpg" },
+        { name: "Scissor Lifts", image: "/equipment-rental/light-equipment/scissorlifts.jpg" },
       ],
     },
     {
@@ -70,15 +73,10 @@ export default function EquipmentCategoriesPage() {
       equipmentCount: 9,
       color: "bg-red-500",
       equipment: [
-        { name: "Man Lifts", image: "/equipment-rental/light-equipment/manlifts.jpg" },
-        { name: "Tele Handler", image: "/equipment-rental/light-equipment/telehandler.jpg" },
-        { name: "Scissor Lifts", image: "/equipment-rental/light-equipment/scissorlifts.jpg" },
         { name: "Tower Lights", image: "/equipment-rental/light-equipment/towerlights.jpg" },
-        { name: "Welding Machines", image: "/equipment-rental/light-equipment/weldingmachines.jpg" },
-        { name: "Welding Generators", image: "/equipment-rental/light-equipment/weldinggenerators.jpg" },
-        { name: "Generators", image: "/equipment-rental/light-equipment/generators.jpg" },
+        { name: "Welding Machines", image: "/equipment-rental/light-equipment/weldingmachine.jpg" },
+        { name: "Diesel Generators", image: "/equipment-rental/light-equipment/dieselgenerators.jpg" },
         { name: "Air Compressor", image: "/equipment-rental/light-equipment/aircompressor.jpg" },
-        { name: "Fork Lift", image: "/equipment-rental/light-equipment/forklift.jpg" },
       ],
     },
   ]

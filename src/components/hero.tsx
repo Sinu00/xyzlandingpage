@@ -16,19 +16,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Vision 2030 Badge */}
-      <div className="absolute top-6 right-6 z-20">
-        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
-          <Image 
-            src="/vision2030logo.jpg" 
-            alt="Supporting Vision 2030" 
-            width={100}
-            height={48}
-            className="h-12 w-auto object-contain"
-          />
-        </div>
-      </div>
-
       {/* Content with professional typography and spacing */}
       <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl text-left">
