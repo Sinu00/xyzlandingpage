@@ -40,7 +40,12 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: "Business Hours",
-      details: "Sun - Thu: 8:00 AM - 5:00 PM | Sat: 10:00 AM - 03:00 PM",
+      details: (
+        <>
+          Sun - Thu: 8:00 AM - 5:00 PM <br />
+          Sat: 10:00 AM - 03:00 PM
+        </>
+      ),
       description: "Extended hours for ongoing projects"
     }
   ]
@@ -139,7 +144,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-lg font-medium text-red-500 mb-2">
+                <p className="text-sm font-medium text-red-500 mb-2">
                   {item.details}
                 </p>
                 <p className="text-sm text-gray-600">
