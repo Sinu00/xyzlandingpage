@@ -210,7 +210,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Ascend Arabia began as a small construction company with a vision to provide exceptional construction and industrial services in Saudi Arabia.
+                  Ascend Arabia is a comprehensive industrial services company providing construction, equipment rental, material trading, and manpower solutions across Saudi Arabia.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Today, we serve clients across various industries including oil & gas, manufacturing, infrastructure, 
