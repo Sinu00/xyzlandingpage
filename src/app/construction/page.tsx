@@ -217,7 +217,7 @@ export default function ConstructionPage() {
       <section className="py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Partner With XYZ Construction</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">Why Partner With Ascend Arabia</h2>
 
             <div className="grid md:grid-cols-4 gap-8">
               {[

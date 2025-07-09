@@ -43,7 +43,7 @@ export default function Header() {
             </div>
             <div className="hidden md:flex items-center gap-1.5">
               <Clock className="h-3 w-3" />
-              <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+              <span>Sun - Thu: 8:00 AM - 5:00 PM</span>
             </div>
           </div>
         </div>
@@ -59,8 +59,8 @@ export default function Header() {
             {/* Logo - smaller and more professional */}
             <div className="flex items-center gap-4">
               <Link href="/" className="flex items-center">
-                <div className={`bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-all duration-300 ${
-                  isScrolled ? 'transform scale-95 shadow-lg' : ''
+                <div className={`text-red-500 px-3 py-2 rounded-md font-bold text-lg hover:text-red-600 transition-all duration-300 ${
+                  isScrolled ? 'transform scale-95' : ''
                 }`}>
                   Ascend Arabia
                 </div>

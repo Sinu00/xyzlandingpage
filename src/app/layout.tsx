@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "XYZ Equipment",
-  description: "XYZ Equipment",
+  title: "Ascend Arabia",
+  description: "Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia",
 };
 
 export default function RootLayout({

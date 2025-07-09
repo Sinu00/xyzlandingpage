@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-red-500 text-white px-3 py-2 rounded font-bold text-xl">Ascend Arabia</div>
-              <span className="text-white font-semibold">Equipment Solutions</span>
+              <div className="text-red-500 px-3 py-2 rounded font-bold text-xl">Ascend Arabia</div>
+              <span className="text-white font-semibold">Company Limited</span>
             </Link>
             <p className="text-gray-300 text-sm">Leading provider of industrial equipment and construction solutions.</p>
             <div className="flex space-x-3">

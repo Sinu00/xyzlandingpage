@@ -36,7 +36,7 @@ export default function About() {
             </div>
 
             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
-              XYZ Equipment Solutions is committed to transforming visions into realities, grounded in the foundations
+              Ascend Arabia is committed to transforming visions into realities, grounded in the foundations
               we lay. We go beyond conventional boundaries to create a legacy defined by exceptional excellence in every
               project we undertake.
             </p>

@@ -16,14 +16,16 @@ export default function EquipmentCategoriesPage() {
       equipmentCount: 8,
       color: "bg-red-500",
       equipment: [
-        { name: "Cranes", image: "/equipment-rental/earth-moving-equipment/cranes.jpg" },
         { name: "Excavator", image: "/equipment-rental/earth-moving-equipment/excavator.jpg" },
-        { name: "Dozer", image: "/equipment-rental/earth-moving-equipment/dozer.jpg" },
-        { name: "Wheel Loader", image: "/equipment-rental/earth-moving-equipment/wheelloader.jpg" },
-        { name: "Grader", image: "/equipment-rental/earth-moving-equipment/grader.jpg" },
-        { name: "Bobcat", image: "/equipment-rental/earth-moving-equipment/bobcat.jpg" },
-        { name: "Roller Compactor", image: "/equipment-rental/earth-moving-equipment/rollercompactor.jpg" },
+        { name: "Bull Dozer", image: "/equipment-rental/earth-moving-equipment/dozer.jpg" },
+        { name: "Wheel Loader", image: "/equipment-rental/earth-moving-equipment/wheelloader.png" },
+        { name: "Grader", image: "/equipment-rental/earth-moving-equipment/grader.png" },
+        { name: "Roller Compactor", image: "/equipment-rental/earth-moving-equipment/rollercompactor.jpeg" },
         { name: "Backhoe Loader", image: "/equipment-rental/earth-moving-equipment/backhoeloader.jpg" },
+        { name: "Wheel Excavator", image: "/equipment-rental/earth-moving-equipment/wheelexcavator.png" },
+        { name: "Mini Excavator", image: "/equipment-rental/earth-moving-equipment/miniexcavator.png" },
+        { name: "Skid Loader", image: "/equipment-rental/earth-moving-equipment/skidloader.jpg" },
+        { name: "Dump Truck", image: "/equipment-rental/earth-moving-equipment/dumptruck.png" },
       ],
     },
     {
@@ -48,7 +50,7 @@ export default function EquipmentCategoriesPage() {
     },
     {
       id: "crane",
-      title: "Crane",
+      title: "Lifting Equipment",
       description: "Mobile cranes, tower cranes, and specialized lifting equipment",
       image: "/placeholder.svg?height=300&width=400",
       equipmentCount: 3,
@@ -106,14 +108,6 @@ export default function EquipmentCategoriesPage() {
             <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
               <Phone className="mr-2 h-5 w-5" />
               Get Instant Quote
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
-            >
-              <Calendar className="mr-2 h-5 w-5" />
-              Check Availability
             </Button>
           </div>
         </div>

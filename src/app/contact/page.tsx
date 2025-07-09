@@ -28,7 +28,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email Address",
-      details: "info@xyz.com",
+      details: "info@Ascend Arabia.com",
       description: "Get detailed quotes and project discussions"
     },
     {
@@ -40,7 +40,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: "Business Hours",
-      details: "Mon - Fri: 8:00 AM - 6:00 PM",
+      details: "Sun - Thu: 8:00 AM - 5:00 PM | Sat: 10:00 AM - 03:00 PM",
       description: "Extended hours for ongoing projects"
     }
   ]
