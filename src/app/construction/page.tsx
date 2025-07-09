@@ -2,7 +2,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package, Home, Users, Shield, MapPin } from "lucide-react"
+import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package, Home } from "lucide-react"
 import Link from "next/link"
 
 export default function ConstructionPage() {
