@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { Calendar, Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package, Home } from "lucide-react"
 import Link from "next/link"
 
@@ -145,17 +144,13 @@ export default function ConstructionPage() {
             with unwavering commitment to quality, safety, and operational excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
-              <Phone className="mr-2 h-5 w-5" />
-              Request Project Quote
-            </Button>
-            <Button
+          <Button
               size="lg"
               variant="outline"
               className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Book Consultation
+              <Phone className="mr-2 h-5 w-5" />
+              Request Project Quote
             </Button>
           </div>
         </div>
@@ -181,12 +176,9 @@ export default function ConstructionPage() {
             {/* Category Header */}
             <div className="text-center mb-12">
               <div className="bg-gray-900 text-white py-2 -mx-4 sm:-mx-6 lg:-mx-8 mb-6">
-                <h2 className="text-3xl md:text-4xl ">{category.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">{category.title}</h2>
               </div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">{category.description}</p>
-              <Badge variant="outline" className="text-base px-6 py-2 border-red-500 text-red-500">
-                {category.services.length} Professional Services
-              </Badge>
             </div>
 
             {/* Services Grid */}
@@ -218,9 +210,6 @@ export default function ConstructionPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <div className="inline-block bg-red-600 text-white px-6 py-3 rounded-full text-sm font-semibold mb-4 uppercase tracking-wide">
-              Specialized Service
-            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               <span className="text-red-600">Temporary</span> Facilities
             </h2>
@@ -287,13 +276,9 @@ export default function ConstructionPage() {
                 Get expert consultation for your temporary facility requirements
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
+              <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
                   <Phone className="mr-2 h-5 w-5" />
                   Request Quote
-                </Button>
-                <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule Consultation
                 </Button>
               </div>
             </div>
