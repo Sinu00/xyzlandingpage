@@ -75,7 +75,7 @@ export default function Services() {
                 </p>
                 
                 {/* Enhanced button with better hover effect */}
-                <Link href={service.href} legacyBehavior>
+                <Link href={service.href}>
                   <Button
                     variant="outline"
                     className="w-full border-2 border-red-500/20 text-red-500 hover:border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 py-3 font-semibold group-hover:shadow-lg transform group-hover:scale-105"

@@ -117,8 +117,8 @@ export default function AboutPage() {
         }}
       >
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-            ABOUT <span className="text-red-500">Ascend Arabia</span>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.2] mb-6 tracking-tight">
+            ABOUT <span className="text-red-500">US</span>
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
             Leading the construction industry in Saudi Arabia with over a decade of excellence, 
@@ -228,6 +228,8 @@ export default function AboutPage() {
                 <Image 
                   src="/hero/heroequipmentrental.jpg" 
                   alt="Construction team at work"
+                  width={800}
+                  height={600}
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>

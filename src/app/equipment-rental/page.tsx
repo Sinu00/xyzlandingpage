@@ -16,14 +16,14 @@ export default function EquipmentCategoriesPage() {
       equipment: [
         { name: "Excavator", image: "/equipment-rental/earth-moving-equipment/excavator.jpg" },
         { name: "Bull Dozer", image: "/equipment-rental/earth-moving-equipment/dozer.jpg" },
-        { name: "Wheel Loader", image: "/equipment-rental/earth-moving-equipment/wheelloader.png" },
-        { name: "Grader", image: "/equipment-rental/earth-moving-equipment/grader.png" },
-        { name: "Roller Compactor", image: "/equipment-rental/earth-moving-equipment/rollercompactor.jpeg" },
+        { name: "Wheel Loader", image: "/equipment-rental/earth-moving-equipment/wheelloader.jpg" },
+        { name: "Grader", image: "/equipment-rental/earth-moving-equipment/grader.jpg" },
+        { name: "Roller Compactor", image: "/equipment-rental/earth-moving-equipment/rollercompactor.jpg" },
         { name: "Backhoe Loader", image: "/equipment-rental/earth-moving-equipment/backhoeloader.jpg" },
-        { name: "Wheel Excavator", image: "/equipment-rental/earth-moving-equipment/wheelexcavator.png" },
-        { name: "Mini Excavator", image: "/equipment-rental/earth-moving-equipment/miniexcavator.png" },
+        { name: "Wheel Excavator", image: "/equipment-rental/earth-moving-equipment/wheelexcavator.jpg" },
+        { name: "Mini Excavator", image: "/equipment-rental/earth-moving-equipment/miniexcavator.jpg" },
         { name: "Skid Loader", image: "/equipment-rental/earth-moving-equipment/skidloader.jpg" },
-        { name: "Dump Truck", image: "/equipment-rental/earth-moving-equipment/dumptruck.png" },
+        { name: "Dump Truck", image: "/equipment-rental/earth-moving-equipment/dumptruck.jpg" },
       ],
     },
     {
@@ -34,13 +34,10 @@ export default function EquipmentCategoriesPage() {
       color: "bg-red-500",
       equipment: [
         { name: "Dyna", image: "/equipment-rental/transportation/dyna.jpg" },
-        { name: "Flat Bed Truck", image: "/equipment-rental/transportation/flatbedtruck.jpg" },
+        { name: "Flat Bed Trailer", image: "/equipment-rental/transportation/flatbedtruck.jpg" },
         { name: "AC / Non AC Buses", image: "/equipment-rental/transportation/bus.jpg" },
-        { name: "Mini Bus", image: "/equipment-rental/transportation/minibus.jpg" },
         { name: "Pickup Truck", image: "/equipment-rental/transportation/pickuptruck.jpg" },
-        { name: "Water Tanker", image: "/equipment-rental/transportation/watertanker.png" },
-        { name: "Boom Trucks", image: "/equipment-rental/transportation/boomtrucks.jpg" },
-        { name: "Winch Truck", image: "/equipment-rental/transportation/winchtruck.jpg" },
+        { name: "Water Tanker", image: "/equipment-rental/transportation/watertanker.jpg" },
         { name: "Vaccume Tankers", image: "/equipment-rental/transportation/vacuumtankers.jpg" },
         { name: "Low Bed Trailer", image: "/equipment-rental/transportation/lowbedtrailer.jpg" },
         { name: "Coaster", image: "/equipment-rental/transportation/coaster.png" },
@@ -55,13 +52,13 @@ export default function EquipmentCategoriesPage() {
       color: "bg-red-500",
       equipment: [
         { name: "Mobile Cranes", image: "/equipment-rental/crane-equipment/mobilecrane.jpg" },
-        { name: "Boom Truck", image: "/equipment-rental/crane-equipment/boomtruck.png" },
-        { name: "Rough Terrain Cranes", image: "/equipment-rental/crane-equipment/roughterraincrane.png" },
-        { name: "Fork Lift", image: "/equipment-rental/crane-equipment/forklift.jpeg" },
+        { name: "Boom Truck", image: "/equipment-rental/crane-equipment/boomtruck.jpg" },
+        { name: "Rough Terrain Cranes", image: "/equipment-rental/crane-equipment/roughterraincrane.jpg" },
+        { name: "Fork Lift", image: "/equipment-rental/crane-equipment/forklift.jpg" },
         { name: "Crawler Cranes", image: "/equipment-rental/crane-equipment/crawlercranes.jpg" },
         { name: "Man Lifts", image: "/equipment-rental/crane-equipment/manlift.jpg" },
-        { name: "Tele Handler", image: "/equipment-rental/crane-equipment/telehandler.jpg" },
-        { name: "Scissor Lifts", image: "/equipment-rental/crane-equipment/scissorlift.png" },
+        { name: "Tele Handler", image: "/equipment-rental/crane-equipment/telehandler.png" },
+        { name: "Scissor Lifts", image: "/equipment-rental/crane-equipment/scissorlift.jpg" },
         { name: "AT Crane", image: "/equipment-rental/crane-equipment/atcrane.jpg" },
       ],
     },
@@ -95,7 +92,7 @@ export default function EquipmentCategoriesPage() {
         }}
       >
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.2] mb-6 tracking-tight">
             EQUIPMENT <span className="text-red-600">RENTAL</span>
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
