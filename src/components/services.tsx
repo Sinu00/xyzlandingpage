@@ -53,14 +53,14 @@ export default function Services() {
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className="group hover:shadow-2xl transition-all duration-500 cursor-pointer border-0 bg-white hover:bg-gray-50/50 transform hover:-translate-y-2 relative overflow-hidden"
+              className="group hover:shadow-2xl transition-all duration-500 cursor-pointer border-0 bg-white hover:bg-gray-50/50 transform hover:-translate-y-2 relative overflow-hidden h-full flex flex-col"
             >
               {/* Subtle gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <CardHeader className="text-center pb-6 pt-8 relative z-10">
+              <CardHeader className="text-center pb-4 pt-6 relative z-10">
                 {/* Enhanced icon with better hover effect */}
-                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:from-red-500 group-hover:to-red-600 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
+                <div className="mx-auto w-20 h-20 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl flex items-center justify-center mb-4 group-hover:from-red-500 group-hover:to-red-600 transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-3">
                   <service.icon className="h-10 w-10 text-red-500 group-hover:text-white transition-all duration-500" />
                 </div>
                 
@@ -69,8 +69,8 @@ export default function Services() {
                 </CardTitle>
               </CardHeader>
 
-              <CardContent className="px-6 pb-8 relative z-10">
-                <p className="text-gray-600 group-hover:text-gray-700 mb-8 leading-relaxed text-center transition-colors duration-300">
+              <CardContent className="px-6 pb-6 relative z-10 flex flex-col flex-grow">
+                <p className="text-gray-600 group-hover:text-gray-700 mb-6 leading-relaxed text-center transition-colors duration-300 flex-grow">
                   {service.description}
                 </p>
                 
