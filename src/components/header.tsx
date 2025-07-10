@@ -58,7 +58,7 @@ export default function Header() {
           <div className="flex justify-between items-center h-16">
             
             {/* Logo - smaller and more professional */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center">
               <Link href="/" className="flex items-center">
               <div className={`bg-red-500 text-white px-3 py-2 rounded-md font-bold text-lg shadow-md hover:bg-red-600 transition-all duration-300 ${
                   isScrolled ? 'transform scale-95 shadow-lg' : ''
@@ -66,18 +66,6 @@ export default function Header() {
                   Ascend Arabia
                 </div>
               </Link>
-              {/* Vision 2030 Logo */}
-              <div className="flex items-center">
-                <Image 
-                  src="/vision2030logo.jpg" 
-                  alt="Vision 2030" 
-                  width={100}
-                  height={32}
-                  className={`h-8 w-auto object-contain transition-all duration-300 ${
-                    isScrolled ? 'h-6' : ''
-                  }`}
-                />
-              </div>
             </div>
 
             {/* Desktop navigation - compact spacing */}
@@ -129,15 +117,18 @@ export default function Header() {
                 }`}></span>
               </Link>
               
-              {/* Compact CTA button */}
-              <Link href="/contact">
-                <Button 
-                  variant="outline" 
-                  className="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white px-4 py-1.5 text-sm font-medium rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition-all duration-300"
-                >
-                  Get Quote
-                </Button>
-              </Link>
+              {/* Vision 2030 Logo */}
+              <div className="flex items-center">
+                <Image 
+                  src="/vision2030logo.jpg" 
+                  alt="Vision 2030" 
+                  width={100}
+                  height={32}
+                  className={`h-8 w-auto object-contain transition-all duration-300 ${
+                    isScrolled ? 'h-6' : ''
+                  }`}
+                />
+              </div>
             </div>
 
             {/* Mobile menu button */}
@@ -200,15 +191,14 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <div className="pt-3">
-                <Link href="/contact" className="block">
-                  <Button 
-                    className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-2 rounded-md shadow-sm transition-all duration-300"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Get Quote
-                  </Button>
-                </Link>
+              <div className="pt-3 flex justify-center">
+                <Image 
+                  src="/vision2030logo.jpg" 
+                  alt="Vision 2030" 
+                  width={100}
+                  height={32}
+                  className="h-8 w-auto object-contain"
+                />
               </div>
             </div>
           </div>
