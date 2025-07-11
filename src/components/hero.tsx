@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Professional buttons with appropriate sizing */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-800">
-            <a href="#services" className="inline-block">
+            <Link href="/services" className="inline-block">
               <Button 
                 size="default" 
                 className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 text-base font-medium rounded-md shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
@@ -42,7 +42,7 @@ export default function Hero() {
                 Explore Our Services
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
-            </a>
+            </Link>
 
             <Link href="/contact" className="inline-block">
               <Button

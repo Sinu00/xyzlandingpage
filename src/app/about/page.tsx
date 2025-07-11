@@ -14,9 +14,11 @@ import {
   Lightbulb,
   Target,
   Heart,
-  Leaf
+  Leaf,
+  ArrowRight
 } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AboutPage() {
   const stats = [
@@ -83,22 +85,26 @@ export default function AboutPage() {
     {
       icon: Building,
       title: "Construction Services",
-      description: "Complete construction solutions from design to completion"
+      description: "Complete construction solutions from design to completion",
+      href: "/construction"
     },
     {
       icon: Truck,
       title: "Equipment Rental",
-      description: "Premium construction equipment and machinery rental"
+      description: "Premium construction equipment and machinery rental",
+      href: "/equipment-rental"
     },
     {
       icon: Users,
       title: "Skilled Manpower",
-      description: "Experienced workforce for all construction needs"
+      description: "Experienced workforce for all construction needs",
+      href: "/manpower"
     },
     {
       icon: Wrench,
       title: "Material Trading",
-      description: "Quality construction materials and industrial supplies"
+      description: "Quality construction materials and industrial supplies",
+      href: "/material-trading"
     }
   ]
 
@@ -275,24 +281,32 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
               Comprehensive construction and industrial solutions tailored to meet your project needs.
             </p>
+            <Link href="/services">
+              <Button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3">
+                View All Services
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-red-200">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="w-8 h-8 text-red-500" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600">
-                  {service.description}
-                </p>
-              </Card>
+              <Link key={index} href={service.href}>
+                <Card className="p-6 text-center hover:shadow-xl transition-all duration-300 border-gray-200 hover:border-red-200 cursor-pointer group">
+                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-red-200 transition-colors duration-300">
+                    <service.icon className="w-8 h-8 text-red-500 group-hover:text-red-600 transition-colors duration-300" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-red-500 transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                    {service.description}
+                  </p>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -359,13 +373,15 @@ export default function AboutPage() {
           <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
             Let&apos;s discuss your next construction project and how we can help bring your vision to life.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-red-500 hover:bg-gray-100 px-8 py-4 text-lg font-medium"
-          >
-            <Users className="mr-2 h-5 w-5" />
-            Contact Us Today
-          </Button>
+          <Link href="/contact">
+            <Button 
+              size="lg" 
+              className="bg-white text-red-500 hover:bg-gray-100 px-8 py-4 text-lg font-medium"
+            >
+              <Users className="mr-2 h-5 w-5" />
+              Contact Us Today
+            </Button>
+          </Link>
         </div>
       </section>
 
