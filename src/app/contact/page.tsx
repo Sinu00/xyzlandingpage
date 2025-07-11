@@ -46,7 +46,7 @@ export default function ContactPage() {
           Sat: 10:00 AM - 03:00 PM
         </>
       ),
-      description: "Extended hours for ongoing projects"
+      description: "Contact us during business hours"
     }
   ]
 
