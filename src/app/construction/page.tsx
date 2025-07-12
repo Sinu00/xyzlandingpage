@@ -143,16 +143,6 @@ export default function ConstructionPage() {
             Providing comprehensive construction solutions for industrial, commercial, and infrastructure developments 
             with unwavering commitment to quality, safety, and operational excellence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Request Project Quote
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -265,24 +255,6 @@ export default function ConstructionPage() {
               </div>
             </div>
           </div>
-
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Need Temporary Facilities for Your Project?
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Get expert consultation for your temporary facility requirements
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Request Quote
-                </Button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -336,12 +308,14 @@ export default function ConstructionPage() {
             Connect with our construction experts for tailored project consultation and competitive estimates
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600">
-              <Phone className="mr-2 h-5 w-5" />
-              Call +966 54 482 3155
-            </Button>
-            <Link href="/contact">
-              <Button size="lg" variant="outline">
+            <a href="tel:+966544823155" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-red-500 hover:bg-red-600 w-full">
+                <Phone className="mr-2 h-5 w-5" />
+                Call +966 54 482 3155
+              </Button>
+            </a>
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full">
                 Request Consultation
               </Button>
             </Link>

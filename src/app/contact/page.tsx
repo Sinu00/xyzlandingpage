@@ -23,19 +23,24 @@ export default function ContactPage() {
       icon: Phone,
       title: "Phone Number",
       details: "+966 54 482 3155",
-      description: "Available 24/7 for urgent construction needs"
+      description: "Available 24/7 for urgent construction needs",
+      isClickable: true,
+      href: "tel:+966544823155"
     },
     {
       icon: Mail,
       title: "Email Address",
       details: "info@ascendarabia.com",
-      description: "Get detailed quotes and project discussions"
+      description: "Get detailed quotes and project discussions",
+      isClickable: true,
+      href: "mailto:info@ascendarabia.com"
     },
     {
       icon: MapPin,
       title: "Location",
       details: "Al Khobar, Kingdom of Saudi Arabia",
-      description: "Serving KSA with nationwide project delivery"
+      description: "Serving KSA with nationwide project delivery",
+      isClickable: false
     },
     {
       icon: Clock,
@@ -46,7 +51,8 @@ export default function ContactPage() {
           Sat: 10:00 AM - 03:00 PM
         </>
       ),
-      description: "Contact us during business hours"
+      description: "",
+      isClickable: false
     }
   ]
 
@@ -106,7 +112,7 @@ export default function ContactPage() {
             Ready to start your construction project? Contact us today for expert consultation, 
             detailed quotes, and professional construction solutions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
               <Phone className="mr-2 h-5 w-5" />
               Call Us Now
@@ -119,7 +125,7 @@ export default function ContactPage() {
               <Mail className="mr-2 h-5 w-5" />
               Send Email
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -144,9 +150,15 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-sm font-medium text-red-500 mb-2">
-                  {item.details}
-                </p>
+                {item.isClickable ? (
+                  <a href={item.href} className="text-sm font-medium text-red-500 mb-2 hover:text-red-600 transition-colors block">
+                    {item.details}
+                  </a>
+                ) : (
+                  <p className="text-sm font-medium text-red-500 mb-2">
+                    {item.details}
+                  </p>
+                )}
                 <p className="text-sm text-gray-600">
                   {item.description}
                 </p>

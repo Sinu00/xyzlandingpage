@@ -63,7 +63,7 @@ export default function MaterialTradingPage() {
         { name: "Flanges", description: "ANSI, DIN, and JIS standard flanges", image: "/material-trading/industrial-hardware/flanges.jpg" },
         { name: "Forged Fittings", description: "High-pressure forged pipe fittings", image: "/material-trading/industrial-hardware/forged-fittings.jpg" },
         { name: "Butt Weld Fittings", description: "Seamless butt weld fittings and reducers", image: "/material-trading/industrial-hardware/butt-weld-fittings.jpg" },
-        { name: "PVC Fittings", description: "Plastic pipe fittings and connectors", image: "/material-trading/industrial-hardware/pvc-fittings.jpg" },
+        { name: "PVC Fittings", description: "Plastic pipe fittings and connectors", image: "/material-trading/industrial-hardware/PVC-fittings.jpg" },
         { name: "Gaskets & Seals", description: "Industrial gaskets and sealing solutions", image: "/material-trading/industrial-hardware/gaskets-seals.jpg" },
         { name: "Stud Bolts & Fasteners", description: "High-strength bolts and fastening hardware", image: "/material-trading/industrial-hardware/stud-bolts-fasteners.jpg" }
       ]
@@ -118,16 +118,6 @@ export default function MaterialTradingPage() {
             Comprehensive supply of high-quality industrial materials, safety equipment, and construction supplies 
             for all your project requirements with guaranteed quality and timely delivery.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-              size="lg"
-              variant="outline"
-              className="bg-transparent border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Get Material Quote
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -233,12 +223,14 @@ export default function MaterialTradingPage() {
             Contact our material specialists for competitive pricing and bulk supply solutions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600">
-              <Phone className="mr-2 h-5 w-5" />
-              Call +966 54 482 3155
-            </Button>
-            <Link href="/contact">
-              <Button size="lg" variant="outline">
+            <a href="tel:+966544823155" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-red-500 hover:bg-red-600 w-full">
+                <Phone className="mr-2 h-5 w-5" />
+                Call +966 54 482 3155
+              </Button>
+            </a>
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full">
                 Request Quote
               </Button>
             </Link>

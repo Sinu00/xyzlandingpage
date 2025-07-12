@@ -99,12 +99,6 @@ export default function EquipmentCategoriesPage() {
             Professional-grade equipment for all your construction and industrial needs. 
             Reliable, maintained, and ready to power your next project.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 text-lg">
-              <Phone className="mr-2 h-5 w-5" />
-              Get Instant Quote
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -211,12 +205,14 @@ export default function EquipmentCategoriesPage() {
             Contact our equipment specialists for personalized recommendations and competitive pricing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-red-500 hover:bg-red-600">
-              <Phone className="mr-2 h-5 w-5" />
-              Call +966 54 482 3155
-            </Button>
-            <Link href="/contact">
-              <Button size="lg" variant="outline">
+            <a href="tel:+966544823155" className="w-full sm:w-auto">
+              <Button size="lg" className="bg-red-500 hover:bg-red-600 w-full">
+                <Phone className="mr-2 h-5 w-5" />
+                Call +966 54 482 3155
+              </Button>
+            </a>
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full">
                 Request Quote
               </Button>
             </Link>
