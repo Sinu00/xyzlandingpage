@@ -31,22 +31,17 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/about" className="text-gray-300 hover:text-red-400 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/services" className="text-gray-300 hover:text-red-400 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-red-400 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -57,22 +52,22 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/equipment-rental" className="text-gray-300 hover:text-red-400 transition-colors">
                   Equipment Rental
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/material-trading" className="text-gray-300 hover:text-red-400 transition-colors">
                   Material Trading
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/construction" className="text-gray-300 hover:text-red-400 transition-colors">
                   Construction
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-300 hover:text-red-400 transition-colors">
+                <Link href="/manpower" className="text-gray-300 hover:text-red-400 transition-colors">
                   Manpower
                 </Link>
               </li>
