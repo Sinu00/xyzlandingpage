@@ -130,7 +130,7 @@ Sent from Ascend Arabia Contact Form`
             id="phone"
             name="phone"
             type="tel"
-            placeholder="+966 54 482 3155"
+            placeholder="Your phone number"
             className="w-full"
           />
         </div>
