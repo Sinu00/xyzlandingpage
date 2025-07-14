@@ -123,7 +123,7 @@ export default function Header() {
                           : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
                       }`}
                     >
-                      Material Trading
+                      Trading
                     </Link>
                     <Link
                       href="/equipment-rental"
@@ -143,7 +143,7 @@ export default function Header() {
                           : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
                       }`}
                     >
-                      Construction Services
+                      Construction
                     </Link>
                     <Link
                       href="/manpower"
@@ -153,7 +153,7 @@ export default function Header() {
                           : 'text-gray-700 hover:text-red-500 hover:bg-gray-50'
                       }`}
                     >
-                      Skilled Manpower
+                      Manpower
                     </Link>
                   </div>
                 </div>
@@ -238,7 +238,7 @@ export default function Header() {
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  All Services
+                  Services
                 </Link>
                 <div className="pl-4 space-y-1">
                   <Link
@@ -250,7 +250,7 @@ export default function Header() {
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    Material Trading
+                    Trading
                   </Link>
                   <Link
                     href="/equipment-rental"
@@ -272,7 +272,7 @@ export default function Header() {
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    Construction Services
+                    Construction
                   </Link>
                   <Link
                     href="/manpower"
@@ -283,7 +283,7 @@ export default function Header() {
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    Skilled Manpower
+                    Manpower
                   </Link>
                 </div>
               </div>
