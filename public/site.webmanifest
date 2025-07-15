@@ -1,0 +1,22 @@
+{
+  "name": "Ascend Arabia",
+  "short_name": "Ascend Arabia",
+  "description": "Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FB2C36",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+} 
