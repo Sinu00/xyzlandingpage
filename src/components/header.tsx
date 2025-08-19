@@ -35,7 +35,7 @@ export default function Header() {
             <div className="flex flex-row items-center gap-2 sm:gap-3">
               <a href="tel:+966544823155" className="flex items-center gap-1 hover:text-gray-300 transition-colors">
                 <Phone className="h-3 w-3" />
-                <span className="text-xs">+966 54 482 3155</span>
+                <span className="text-xs">+966 57 365 3238</span>
               </a>
               <a href="mailto:info@ascendarabia.com" className="flex items-center gap-1 hover:text-gray-300 transition-colors">
                 <Mail className="h-3 w-3" />

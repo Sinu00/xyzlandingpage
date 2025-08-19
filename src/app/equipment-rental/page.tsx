@@ -208,7 +208,7 @@ export default function EquipmentCategoriesPage() {
             <a href="tel:+966544823155" className="w-full sm:w-auto">
               <Button size="lg" className="bg-red-500 hover:bg-red-600 w-full">
                 <Phone className="mr-2 h-5 w-5" />
-                Call +966 54 482 3155
+                Call +966 57 365 3238
               </Button>
             </a>
             <Link href="/contact" className="w-full sm:w-auto">

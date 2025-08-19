@@ -19,7 +19,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Phone Number",
-      details: "+966 54 482 3155",
+      details: "+966 57 365 3238",
       description: "Available 24/7 for urgent construction needs",
       isClickable: true,
       href: "tel:+966544823155"

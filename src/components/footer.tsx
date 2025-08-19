@@ -86,7 +86,7 @@ export default function Footer() {
               </div>
               <a href="tel:+966544823155" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
                 <Phone className="h-5 w-5 text-red-500 flex-shrink-0" />
-                <p className="text-gray-300 text-sm">+966 54 482 3155</p>
+                <p className="text-gray-300 text-sm">+966 57 365 3238</p>
               </a>
               <a href="mailto:info@ascendarabia.com" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
                 <Mail className="h-5 w-5 text-red-500 flex-shrink-0" />
