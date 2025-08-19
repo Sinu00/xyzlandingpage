@@ -57,7 +57,7 @@ export default function EquipmentCategoriesPage() {
         { name: "Fork Lift", image: "/equipment-rental/crane-equipment/forklift.jpg" },
         { name: "Crawler Cranes", image: "/equipment-rental/crane-equipment/crawlercranes.jpg" },
         { name: "Man Lifts", image: "/equipment-rental/crane-equipment/manlift.jpg" },
-        { name: "Tele Handler", image: "/equipment-rental/crane-equipment/telehandler.png" },
+        { name: "Tele Handler", image: "/equipment-rental/crane-equipment/telehandler.jpg" },
         { name: "Scissor Lifts", image: "/equipment-rental/crane-equipment/scissorlift.jpg" },
         { name: "AT Crane", image: "/equipment-rental/crane-equipment/atcrane.jpg" },
       ],
