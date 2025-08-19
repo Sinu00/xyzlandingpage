@@ -55,7 +55,7 @@ Sent from Ascend Arabia Contact Form`
 
     // Encode the message for WhatsApp URL
     const encodedMessage = encodeURIComponent(whatsappMessage)
-    const whatsappNumber = "966544823155"
+    const whatsappNumber = "966573653238"
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
 
     // Open WhatsApp with the pre-filled message
