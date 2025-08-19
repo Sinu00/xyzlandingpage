@@ -84,7 +84,7 @@ export default function Footer() {
                   <p className="text-gray-300 text-sm">Kingdom of Saudi Arabia</p>
                 </div>
               </div>
-              <a href="tel:+966544823155" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
+              <a href="tel:+966573653238" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
                 <Phone className="h-5 w-5 text-red-500 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">+966 57 365 3238</p>
               </a>

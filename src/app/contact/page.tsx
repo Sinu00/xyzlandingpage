@@ -22,7 +22,7 @@ export default function ContactPage() {
       details: "+966 57 365 3238",
       description: "Available 24/7 for urgent construction needs",
       isClickable: true,
-      href: "tel:+966544823155"
+      href: "tel:+966573653238"
     },
     {
       icon: Mail,

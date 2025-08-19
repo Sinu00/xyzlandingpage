@@ -223,7 +223,7 @@ export default function MaterialTradingPage() {
             Contact our material specialists for competitive pricing and bulk supply solutions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+966544823155" className="w-full sm:w-auto">
+            <a href="tel:+966573653238" className="w-full sm:w-auto">
               <Button size="lg" className="bg-red-500 hover:bg-red-600 w-full">
                 <Phone className="mr-2 h-5 w-5" />
                 Call +966 57 365 3238
