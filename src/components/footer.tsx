@@ -80,8 +80,9 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300 text-sm">Al Khobar,</p>
-                  <p className="text-gray-300 text-sm">Kingdom of Saudi Arabia</p>
+                  <p className="text-gray-300 text-sm">Prince Thamer St,</p>
+                  <p className="text-gray-300 text-sm">Al Khobar Al Shamalia,</p>
+                  <p className="text-gray-300 text-sm">Al Khobar 34426</p>
                 </div>
               </div>
               <a href="tel:+966573653238" className="flex items-center space-x-3 hover:text-red-400 transition-colors">

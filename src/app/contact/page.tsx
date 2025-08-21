@@ -35,7 +35,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Location",
-      details: "Al Khobar, Kingdom of Saudi Arabia",
+      details: "Prince Thamer St, Al Khobar Al Shamalia, Al Khobar 34426",
       description: "Serving KSA with nationwide project delivery",
       isClickable: false
     },
