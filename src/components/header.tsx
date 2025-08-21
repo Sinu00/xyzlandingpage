@@ -60,7 +60,7 @@ export default function Header() {
             {/* Logo - smaller and more professional */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
-                <Image src="/logo/AscendArabiapoppinscroped.png" alt="Ascend Arabia" width={100} height={32} className="h-8 w-auto object-contain" />
+                <Image src="/logo/AscendArabialogonobg.png" alt="Ascend Arabia" width={100} height={32} className="h-8 w-auto object-contain" />
               </Link>
             </div>
 
