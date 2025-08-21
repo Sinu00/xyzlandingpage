@@ -38,7 +38,7 @@ export default function EquipmentCategoriesPage() {
         { name: "AC / Non AC Buses", image: "/equipment-rental/transportation/bus.jpg" },
         { name: "Pickup Truck", image: "/equipment-rental/transportation/pickuptruck.jpg" },
         { name: "Water Tanker", image: "/equipment-rental/transportation/watertanker.jpg" },
-        { name: "Vaccume Tankers", image: "/equipment-rental/transportation/vacuumtankers.jpg" },
+        { name: "Vaccum Tankers", image: "/equipment-rental/transportation/vacuumtankers.jpg" },
         { name: "Low Bed Trailer", image: "/equipment-rental/transportation/lowbedtrailer.jpg" },
         { name: "Coaster", image: "/equipment-rental/transportation/coaster.png" },
         { name: "Hiace", image: "/equipment-rental/transportation/hiace.jpg" },
