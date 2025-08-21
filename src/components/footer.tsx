@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
           <Link href="/" className="flex items-center space-x-2">
-              <Image src="/logo/AscendArabiapoppinscroped.png" alt="Ascend Arabia" width={100} height={32} className="h-20 w-auto object-contain rounded-lg" />
+              <Image src="/logo/AscendArabiapoppinscroped.png" alt="Ascend Arabia" width={100} height={32} className="h-20 w-auto object-contain rounded-xs" />
             </Link>
             <p className="text-gray-300 text-sm">Leading provider of industrial equipment and construction solutions.</p>
             <div className="flex space-x-3">
