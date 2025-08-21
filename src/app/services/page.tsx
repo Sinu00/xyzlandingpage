@@ -19,6 +19,31 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Construction Services - Equipment Rental, Material Trading & Manpower",
+  description: "Comprehensive construction services including equipment rental, material trading, skilled manpower, and construction solutions across Saudi Arabia. 100+ projects completed with quality excellence.",
+  keywords: "construction services KSA, equipment rental Saudi Arabia, material trading, manpower services, industrial construction, crane rental, earth moving",
+  openGraph: {
+    title: "Construction Services - Equipment Rental, Material Trading & Manpower",
+    description: "Comprehensive construction services including equipment rental, material trading, skilled manpower, and construction solutions across Saudi Arabia.",
+    url: "https://ascendarabia.com/services",
+    images: [
+      {
+        url: "/hero/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ascend Arabia Construction Services",
+      },
+    ],
+  },
+  twitter: {
+    title: "Construction Services - Equipment Rental, Material Trading & Manpower",
+    description: "Comprehensive construction services including equipment rental, material trading, skilled manpower, and construction solutions.",
+    images: ["/hero/hero.jpg"],
+  },
+}
 
 export default function ServicesPage() {
   const mainServices = [

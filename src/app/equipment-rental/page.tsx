@@ -4,6 +4,31 @@ import { Button } from "@/components/ui/button"
 import { Phone, Star, Clock, Headphones, Truck } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Equipment Rental - Construction Machinery & Industrial Equipment KSA",
+  description: "Professional equipment rental services in Saudi Arabia. Earth moving equipment, cranes, transportation vehicles, and light construction tools. Daily, weekly, monthly rentals with 24/7 support.",
+  keywords: "equipment rental KSA, construction equipment Saudi Arabia, crane rental, excavator rental, earth moving equipment, transportation rental, industrial equipment",
+  openGraph: {
+    title: "Equipment Rental - Construction Machinery & Industrial Equipment KSA",
+    description: "Professional equipment rental services in Saudi Arabia. Earth moving equipment, cranes, transportation vehicles, and light construction tools.",
+    url: "https://ascendarabia.com/equipment-rental",
+    images: [
+      {
+        url: "/hero/heroequipmentrental.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Construction Equipment Rental Saudi Arabia",
+      },
+    ],
+  },
+  twitter: {
+    title: "Equipment Rental - Construction Machinery & Industrial Equipment KSA",
+    description: "Professional equipment rental services in Saudi Arabia. Earth moving equipment, cranes, and transportation vehicles.",
+    images: ["/hero/heroequipmentrental.jpg"],
+  },
+}
 
 export default function EquipmentCategoriesPage() {
   const equipmentCategories = [

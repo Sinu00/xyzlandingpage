@@ -4,6 +4,31 @@ import { Button } from "@/components/ui/button"
 import { Phone, Star, Clock, Headphones, Truck } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Material Trading - Construction Materials & Industrial Supplies KSA",
+  description: "Premium construction materials and industrial supplies in Saudi Arabia. Pipes, valves, fittings, safety equipment, electrical instrumentation, and power tools with quality guarantee.",
+  keywords: "material trading Saudi Arabia, construction materials KSA, industrial supplies, pipes valves fittings, safety equipment, electrical instrumentation",
+  openGraph: {
+    title: "Material Trading - Construction Materials & Industrial Supplies KSA",
+    description: "Premium construction materials and industrial supplies in Saudi Arabia. Pipes, valves, fittings, safety equipment, and electrical instrumentation.",
+    url: "https://ascendarabia.com/material-trading",
+    images: [
+      {
+        url: "/hero/heromaterialtrading.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Material Trading Saudi Arabia",
+      },
+    ],
+  },
+  twitter: {
+    title: "Material Trading - Construction Materials & Industrial Supplies KSA",
+    description: "Premium construction materials and industrial supplies in Saudi Arabia. Pipes, valves, fittings, and safety equipment.",
+    images: ["/hero/heromaterialtrading.jpg"],
+  },
+}
 
 export default function MaterialTradingPage() {
   const materialCategories = [

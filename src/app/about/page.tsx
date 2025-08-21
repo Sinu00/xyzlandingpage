@@ -19,6 +19,31 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Us - Leading Construction Company in Saudi Arabia",
+  description: "Learn about Ascend Arabia's 10+ years of experience in construction, equipment rental, and industrial services. Trusted by 100+ clients across KSA with proven expertise in quality and safety.",
+  keywords: "about Ascend Arabia, construction company KSA, industrial services Saudi Arabia, construction experience, quality construction",
+  openGraph: {
+    title: "About Ascend Arabia - Leading Construction Company in Saudi Arabia",
+    description: "Learn about Ascend Arabia's 10+ years of experience in construction, equipment rental, and industrial services. Trusted by 100+ clients across KSA.",
+    url: "https://ascendarabia.com/about",
+    images: [
+      {
+        url: "/hero/heroaboutus.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Ascend Arabia Construction Company",
+      },
+    ],
+  },
+  twitter: {
+    title: "About Ascend Arabia - Leading Construction Company in Saudi Arabia",
+    description: "Learn about Ascend Arabia's 10+ years of experience in construction, equipment rental, and industrial services.",
+    images: ["/hero/heroaboutus.jpg"],
+  },
+}
 
 export default function AboutPage() {
   const stats = [

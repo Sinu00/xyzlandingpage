@@ -3,6 +3,31 @@ import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Star, Clock, Headphones, Truck, Users, Shield, Award } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Skilled Manpower Services - Construction Workers & Technicians KSA",
+  description: "Professional manpower services in Saudi Arabia. Skilled construction workers, technicians, equipment operators, safety specialists, and project supervisors for all construction needs.",
+  keywords: "manpower services Saudi Arabia, skilled workers KSA, construction labor, technicians, equipment operators, project supervisors, construction workforce",
+  openGraph: {
+    title: "Skilled Manpower Services - Construction Workers & Technicians KSA",
+    description: "Professional manpower services in Saudi Arabia. Skilled construction workers, technicians, equipment operators, and safety specialists.",
+    url: "https://ascendarabia.com/manpower",
+    images: [
+      {
+        url: "/hero/heromanpower.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Skilled Manpower Services Saudi Arabia",
+      },
+    ],
+  },
+  twitter: {
+    title: "Skilled Manpower Services - Construction Workers & Technicians KSA",
+    description: "Professional manpower services in Saudi Arabia. Skilled construction workers, technicians, and equipment operators.",
+    images: ["/hero/heromanpower.jpg"],
+  },
+}
 
 export default function ManpowerPage() {
   const manpowerServices = [

@@ -3,6 +3,31 @@ import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Phone, Star, Clock, Headphones, Truck, Building, Cog, Factory, Package, Home } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Construction Services - Industrial & Commercial Building in Saudi Arabia",
+  description: "Professional construction services in Saudi Arabia. Industrial buildings, commercial projects, infrastructure development, and renovation services with quality assurance and timely delivery.",
+  keywords: "construction services Saudi Arabia, industrial construction KSA, commercial building, infrastructure development, construction contractor",
+  openGraph: {
+    title: "Construction Services - Industrial & Commercial Building in Saudi Arabia",
+    description: "Professional construction services in Saudi Arabia. Industrial buildings, commercial projects, infrastructure development, and renovation services.",
+    url: "https://ascendarabia.com/construction",
+    images: [
+      {
+        url: "/hero/heroconstruction.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Construction Services Saudi Arabia",
+      },
+    ],
+  },
+  twitter: {
+    title: "Construction Services - Industrial & Commercial Building in Saudi Arabia",
+    description: "Professional construction services in Saudi Arabia. Industrial buildings, commercial projects, and infrastructure development.",
+    images: ["/hero/heroconstruction.jpg"],
+  },
+}
 
 export default function ConstructionPage() {
   const constructionServices = [

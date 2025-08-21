@@ -13,6 +13,31 @@ import {
   Truck,
   CheckCircle
 } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Us - Get Quote for Construction Services in Saudi Arabia",
+  description: "Contact Ascend Arabia for construction, equipment rental, and material trading services. Located in Al Khobar, serving KSA nationwide. Call +966 57 365 3238 or email info@ascendarabia.com",
+  keywords: "contact Ascend Arabia, construction company Al Khobar, equipment rental quote, construction services KSA, material trading contact",
+  openGraph: {
+    title: "Contact Ascend Arabia - Construction Services in Saudi Arabia",
+    description: "Contact Ascend Arabia for construction, equipment rental, and material trading services. Located in Al Khobar, serving KSA nationwide.",
+    url: "https://ascendarabia.com/contact",
+    images: [
+      {
+        url: "/hero/herocontact.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Ascend Arabia Construction Company",
+      },
+    ],
+  },
+  twitter: {
+    title: "Contact Ascend Arabia - Construction Services in Saudi Arabia",
+    description: "Contact Ascend Arabia for construction, equipment rental, and material trading services in Saudi Arabia.",
+    images: ["/hero/herocontact.jpg"],
+  },
+}
 
 export default function ContactPage() {
   const contactInfo = [
