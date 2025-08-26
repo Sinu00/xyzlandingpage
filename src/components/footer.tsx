@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center space-x-2">
               <Image src="/logo/AscendArabialogonobg.png" alt="Ascend Arabia" width={100} height={32} className="h-20 w-auto object-contain rounded-xs" />
             </Link>
-            <p className="text-gray-300 text-sm">Leading provider of industrial equipment and construction solutions.</p>
+            <p className="text-gray-300 text-sm">Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions across KSA.</p>
             <div className="flex space-x-3">
               <Link href="#" className="bg-gray-800 p-2 rounded hover:bg-red-500 transition-colors">
                 <Facebook className="h-5 w-5 text-white" />

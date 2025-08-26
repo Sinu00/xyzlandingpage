@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     default: "Ascend Arabia - Leading Construction & Industrial Services in Saudi Arabia",
     template: "%s | Ascend Arabia"
   },
-  description: "Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia. Professional construction services with 10+ years experience.",
-  keywords: "construction Saudi Arabia, equipment rental KSA, material trading, manpower services, industrial construction, crane rental, earth moving equipment",
+  description: "Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions. Serving Khobar, Dammam, and across KSA.",
+  keywords: "ascend arabia, construction company al khobar, construction company saudi arabia, equipment rental khobar, manpower al khobar, material trading saudi arabia, construction services dammam, saudi arabia construction company, khobar construction, equipment rental al khobar",
   authors: [{ name: "Ascend Arabia" }],
   creator: "Ascend Arabia",
   publisher: "Ascend Arabia",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://ascendarabia.com',
     siteName: 'Ascend Arabia',
-    title: 'Ascend Arabia - Leading Construction & Industrial Services in Saudi Arabia',
-    description: 'Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia. Professional construction services with 10+ years experience.',
+    title: 'Ascend Arabia - Construction Company in Al Khobar, Saudi Arabia',
+    description: 'Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions. Serving Khobar, Dammam, and across KSA.',
     images: [
       {
         url: '/hero/hero.jpg',
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@ascendarabia',
     creator: '@ascendarabia',
-    title: 'Ascend Arabia - Leading Construction & Industrial Services in Saudi Arabia',
-    description: 'Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia.',
+    title: 'Ascend Arabia - Construction Company in Al Khobar, Saudi Arabia',
+    description: 'Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions.',
     images: ['/hero/hero.jpg'],
   },
   icons: {
@@ -89,7 +89,7 @@ export default function RootLayout({
               "name": "Ascend Arabia",
               "url": "https://ascendarabia.com",
               "logo": "https://ascendarabia.com/logo/AscendArabialogonobg.png",
-              "description": "Leading provider of equipment rental, material trading, construction, and manpower solutions in Saudi Arabia",
+              "description": "Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions across KSA.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Prince Thamer St, Al Khobar Al Shamalia",
@@ -116,6 +116,25 @@ export default function RootLayout({
                 "Material Trading",
                 "Manpower Services"
               ],
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Al Khobar"
+                },
+                {
+                  "@type": "City", 
+                  "name": "Dammam"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Saudi Arabia"
+                }
+              ],
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 26.4207,
+                "longitude": 50.0888
+              },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "Construction Services",
