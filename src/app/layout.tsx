@@ -92,9 +92,7 @@ export default function RootLayout({
               "description": "Ascend Arabia - Leading construction company in Al Khobar, Saudi Arabia. Equipment rental, material trading, manpower services, and construction solutions across KSA.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "8051, Prince Thamer Ibn Abdulaziz,
-Ash Shamaliyah, Al Khobar-34426
-Kingdom of Saudi Arabia",
+                "streetAddress": "Prince Thamer St, Al Khobar Al Shamalia",
                 "addressLocality": "Al Khobar",
                 "postalCode": "34426",
                 "addressCountry": "SA"
@@ -108,10 +106,6 @@ Kingdom of Saudi Arabia",
                 "https://instagram.com/ascendarabia"
               ],
               "foundingDate": "2014",
-              "areaServed": {
-                "@type": "Country",
-                "name": "Saudi Arabia"
-              },
               "serviceType": [
                 "Construction Services",
                 "Equipment Rental",
