@@ -80,14 +80,18 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300 text-sm">Prince Thamer St,</p>
-                  <p className="text-gray-300 text-sm">Al Khobar Al Shamalia,</p>
-                  <p className="text-gray-300 text-sm">Al Khobar 34426</p>
+                  <p className="text-gray-300 text-sm">8051, Prince Thamer Ibn Abdulaziz,                  </p>
+                  <p className="text-gray-300 text-sm">Ash Shamaliyah, Al Khobar-34426</p>
+                  <p className="text-gray-300 text-sm">Kingdom of Saudi Arabia</p>
                 </div>
               </div>
               <a href="tel:+966573653238" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
                 <Phone className="h-5 w-5 text-red-500 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">+966 57 365 3238</p>
+              </a>
+              <a href="tel:+966 13 839 0673" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
+                <Phone className="h-5 w-5 text-red-500 flex-shrink-0" />
+                <p className="text-gray-300 text-sm">+966 13 839 0673</p>
               </a>
               <a href="mailto:info@ascendarabia.com" className="flex items-center space-x-3 hover:text-red-400 transition-colors">
                 <Mail className="h-5 w-5 text-red-500 flex-shrink-0" />

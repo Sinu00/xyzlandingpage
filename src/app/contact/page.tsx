@@ -60,7 +60,9 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Location",
-      details: "Prince Thamer St, Al Khobar Al Shamalia, Al Khobar 34426",
+      details: "8051, Prince Thamer Ibn Abdulaziz,
+Ash Shamaliyah, Al Khobar-34426
+Kingdom of Saudi Arabia, Al Khobar 34426",
       description: "Serving KSA with nationwide project delivery",
       isClickable: false
     },
